@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [ольга печенюк](https://up.htmlacademy.ru/adaptive/25/user/1853163).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Михин](https://htmlacademy.ru/profile/undgrnd).
 
 ---
 
