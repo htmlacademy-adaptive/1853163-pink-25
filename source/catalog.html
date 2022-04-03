@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body class="page__body">
+<header class="catalog-header">
+  <a class="logo">
+    <img class="logo-image logo-image__mobile" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
+  </a>
+  <nav class="main-menu">
+    <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-menu__wrapper">
+      <ul class="main-menu__list">
+        <li class="main-menu__item main-menu__item--active">
+          <a>
+            Главная
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="photo.html">
+            Фотографии
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="form.html">
+            Конкурс
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <h1 class="user-photo">Фотографии
+    пользователей </h1>
+  <p class="photo-description">Взгляните на фотографии, которые выкладывают пользователи!
+    Видите, как не хватает ваших?</p>
+  <div class="user-rewiew">
+    <img src="img/panorama.jpg" alt="Панорама" class="user-rewiew__photo" width="320" height="137">
+    <blockquote class="user-rewiew__quote">
+      <cite class="user-review__author-name">Анна<span class="user-rewiew__time">(5 минут назад)</span></cite>
+      <p class="user-review__text">Прыгать или нет? Напишите в
+        комментарии свой совет и
+        смотрите прямую трансляцию в
+        перископе, задавайте свои вопросы!</p>
+    </blockquote>
+    <span class="user-rewiew__likes">Нравится: 215</span>
+  </div>
+  <div class="user-rewiew">
+    <img src="img/car.jpg" alt="Машина" class="user-rewiew__photo" width="280" height="180">
+  <blockquote class="user-rewiew__quote">
+    <cite class="user-reviews__author-name">Левон<span class="user-rewiew__time">(5 часов назад)</span></cite>
+    <p class="user-review__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+    </blockquote>
+    <span class="user-rewiew__likes">Нравится: 356</span>
+  </div>
+  <div class="user-rewiew">
+    <img src="img/drum.jpg" alt="Барабанная установка" class="user-rewiew__photo" width="280" height="180">
+    <blockquote class="user-rewiew__quote">
+      <cite class="user-reviews__author-name">Антон<span class="user-rewiew__time">(12 часов назад)</span></cite>
+      <p class="user-reviews__text">Соседи будут рады!</p>
+    </blockquote>
+    <span class="user-rewiew__likes">Нравится: 666</span>
+  </div>
+  <div class="user-rewiew">
+    <img src="img/window.jpg" alt="Окна" class="user-rewiew__photo"width="280" height="180">
+    <blockquote class="user-rewiew__quote">
+      <cite class="user-review__author-name">Борис<span class="user-rewiew__time">(20 часов назад)</span></cite>
+      <p class="user-review__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+    </blockquote>
+    <span class="user-rewiew__likes">Нравится: 215</span>
+  </div>
+  <div class="user-rewiew">
+    <img src="img/fair.jpg" alt="Ярмарка" class="user-rewiew__photo" width="280" height="180">
+    <blockquote class="user-rewiew__quote">
+      <cite class="user-reviews__author-name">Сергей<span class="user-rewiew__time">(25 часов назад)</span></cite>
+      <p class="user-reviews__text">Самая кубанская в мире!!</p>
+    </blockquote>
+    <span class="user-rewiews__likes">Нравится: 4</span>
+  </div>
+  <div class="user-rewiew">
+    <img src="img/mountains.jpg" alt="Горы" class="user-rewiew__photo" width="280" height="180">
+    <blockquote class="user-rewiew__quote">
+      <cite class="user-reviews__author-name">Максим<span class="user-rewiew__time">(40 часов назад)</span></cite>
+      <p class="user-review__text">Где снег-то?</p>
+    </blockquote>
+    <span class="user-rewiew__likes">Нравится: 150</span>
+  </div>
+  <div class="user-rewiew">
+    <img src="img/plane.jpg" alt="Самолет" class="user-rewiew__photo" width="280" height="180">
+    <blockquote class="user-rewiew__quote">
+    <cite class="user-review__author-name">Надежда<span class="user-rewiew__time">(45 часов назад)</span></cite>
+    <p class="user-review__text">Всем GM и взаимные лайки!</p>
+    </blockquote>
+    <span class="user-rewiew__likes">Нравится: 2560</span>
+  </div>
+  <p class="user-rewiew__slogan">Затмите их всех!
+    Выкладывайте все, что накопилось в телефоне!</p>
+  <div class="photo-processing">
+  <img src="img/winter.jpg" alt="Зимний пейзаж" class="user-rewiew__photo" width="280" height="374">
+  <ul class="photo-processing__functions">
+    <li class="photo-processing__option photo-processing__option--current">
+      <button class="button" class="photo-processing__button">
+        <img src="img/crop.svg" class="photo-processing__icon" alt="Кадрировать картинку" width="47" height="65">
+      </button>
+    </li>
+    <li class="photo-processing__option">
+      <button class="button" class="photo-processing__button">
+        <img  src="img/fill.svg" class="photo-processing__icon" alt="Добавить яркость" width="43" height="47">
+      </button>
+    </li>
+    <li class="photo-processing__option">
+      <button class="button" class="photo-processing__button">
+        <img src="img/contrast.svg" class="photo-processing__icon" alt="Добавить контраст" width="44" height="41">
+      </button>
+    </li>
+  </ul>
+    <input type="range" class="photo-processing__option--range">
+  </div>
+</main>
+<footer class="main-footer">
+  <div class="main-footer__wrapper">
+    <a class="logo">
+      <img class="logo-image" src="img/mobile-footer-logo.svg" width="145" height="40" alt="Приложение Pink">
+    </a>
+    <div class="main-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>
+
+
