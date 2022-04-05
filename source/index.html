@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
@@ -7,18 +7,18 @@
 <body class="page__body">
 <header class="index-header">
   <a class="logo">
-    <img class="logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
+    <img class="logo__image" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
   </a>
   <nav class="main-menu">
     <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <ul class="main-nav__list">
+    <ul class="main-menu__list">
       <li class="main-menu__item main-nav__item--active">
-        <a>
+        <a href="#">
           Главная
         </a>
       </li>
-      <li class="site-list__item">
-        <a href="photo.html">
+      <li class="main-menu__item">
+        <a href="catalog.html">
           Фотографии
         </a>
       </li>
@@ -36,37 +36,37 @@
   </nav>
 </header>
 <main class="main-container">
-  <header class="main-header">
     <h1 class="visually-hidden">Приложение Pink</h1>
     <p class="main-container__slogan">Взгляните на жизнь иначе!</p>
-    <button class="main-container__button" type="button">Скачать приложение</button>
+    <section class="download-container">
+    <button class="download-container__button" type="button">Скачать приложение</button>
     <div class="operating-systems">
       <ul class="operating-systems__list">
         <li class="operating-system__item">
           <a href="#" class="operating-system__link">
-            <img src="img/apple.svg" class="operating-system__icon" alt="IOS" width="47" height="65">
+            <img src="img/apple.svg" class="operating-system__icon" alt="Операционая система IOS" width="47" height="65">
           </a>
         </li>
         <li class="operating-system__item">
           <a href="#" class="operating-system__link">
-            <img src="img/android.svg" class="operating-system__icon" alt="Android" width="43" height="47">
+            <img src="img/android.svg" class="operating-system__icon" alt="Операционая система Android" width="43" height="47">
           </a>
         </li>
         <li class="operating-system__item">
           <a href="#" class="operating-system__link">
-            <img src="img/windows.svg" class="operating-system__icon" alt="Windows" width="44" height="41">
+            <img src="img/windows.svg" class="operating-system__icon" alt="Операционая система Windows" width="44" height="41">
           </a>
         </li>
       </ul>
-      <p class="operating-system__information">
+      <p class="download-container__information">
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </p>
     </div>
-  </header>
-  <section class="advertising">
-    <p class="advertising-slogan">Устали от серости мегаполиса?</p>
-    <p class="advertising-slogan">Нам есть, что вам предложить!</p>
   </section>
+  <div class="advertising">
+    <p class="advertising__slogan">Устали от серости мегаполиса?</p>
+    <p class="advertising__slogan">Нам есть, что вам предложить!</p>
+  </div>
   <section class="advantages">
     <div class="advantages__wrapper">
       <h2 class="visually-hidden">Наши преимущества</h2>
@@ -90,20 +90,20 @@
     </div>
   </section>
   <section class="reviews">
-    <div class="reviews__wrapper slider">
+    <div class="reviews__wrapper ">
       <h2 class="reviews__title">Отзывы о нас</h2>
-      <div class="reviews__list slider__list">
-        <blockquote class="reviews__item slider__item">
+      <div class="reviews__list">
+        <blockquote class="reviews__item">
           <cite class="reviews__author-name">Николай Петров</cite>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
-        <blockquote class="reviews__item slider__item">
+        <blockquote class="reviews__item ">
           <cite class="reviews__author-name">Николай Петров</cite>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
-        <blockquote class="reviews__item slider__item">
+        <blockquote class="reviews__item ">
           <cite class="reviews__author-name">Николай Петров</cite>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -126,16 +126,16 @@
       <tr class="price-table__row">
         <th class="price-table__header"></th>
         <th class="price-table__header">
-          <span class="rate-name">База</span>
-          <p class="rate-price">1,99 USD</p>
+          <span class="price-table__name">База</span>
+          <p class="price-table__value">1,99 USD</p>
         </th>
         <th class="price-table__header">
-          <span class="rate-name">СТАНДАРТ</span>
-          <p class="rate-price">3,99 USD</p>
+          <span class="price-table__name">СТАНДАРТ</span>
+          <p class="price-table__value">3,99 USD</p>
         </th>
         <th class="price-table__header">
-          <span class="rate-name">АНЛИМ</span>
-          <p class="rate-price">9,99 USD</p>
+          <span class="price-table__name">АНЛИМ</span>
+          <p class="price-table__value">9,99 USD</p>
         </th>
       </tr>
       <tr class="price-table__row">
@@ -159,10 +159,10 @@
     </table>
     <button class="price__prev" type="button">Предыдущий тариф</button>
     <button class="price__next" type="button">Следующий тариф</button>
-    <p class="price__toggles slider__toggles">
-      <button class="slider__toggle slider__toggle--current" type="button">1</button>
-      <button class="slider__toggle" type="button">2</button>
-      <button class="slider__toggle" type="button">3</button>
+    <p class="price__toggles">
+      <button class="price__toggle price__toggle--current" type="button">1</button>
+      <button class="price__toggle" type="button">2</button>
+      <button class="price__toggle" type="button">3</button>
     </p>
   </section>
   <section class="contacts">
@@ -179,7 +179,7 @@
       </li>
       <li class="contacts__item">
         <span class="contacts__instruction">Приезжайте в гости:</span>
-        <a href="#" class="contacts__adress"> ул. Большая
+        <a href="#" class="contacts__address"> ул. Большая
           Конюшенная, 19/8</a>
       </li>
     </ul>
