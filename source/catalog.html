@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
 </head>
-<body class="page__body">
+<body class="body">
 <header class="catalog-header">
   <a class="logo">
-    <img class="logo-image logo-image__mobile" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
+    <img class="logo__image logo-image__mobile" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
   </a>
   <nav class="main-menu">
     <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="main-menu__wrapper">
       <ul class="main-menu__list">
         <li class="main-menu__item main-menu__item--active">
-          <a>
+          <a href="index.html">
             Главная
           </a>
         </li>
@@ -37,7 +37,7 @@
     </div>
   </nav>
 </header>
-<main>
+<main class="main-container">
   <h1 class="user-photo">Фотографии
     пользователей </h1>
   <p class="photo-description">Взгляните на фотографии, которые выкладывают пользователи!
@@ -70,7 +70,7 @@
     <span class="user-review__likes">Нравится: 666</span>
   </div>
   <div class="user-review">
-    <img src="img/window.jpg" alt="Окна" class="user-review__photo"width="280" height="180">
+    <img src="img/window.jpg" alt="Окна" class="user-review__photo" width="280" height="180">
     <blockquote class="user-review__quote">
       <cite class="user-review__author-name">Борис<span class="user-review__time">(20 часов назад)</span></cite>
       <p class="user-review__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -107,17 +107,17 @@
   <img src="img/winter.jpg" alt="Зимний пейзаж" class="user-review__photo" width="280" height="374">
   <ul class="photo-processing__functions">
     <li class="photo-processing__option photo-processing__option--current">
-      <button class="button" class="photo-processing__button">
+      <button type="button" class="photo-processing__button">
         <img src="img/crop.svg" class="photo-processing__icon" alt="Кадрировать картинку" width="47" height="65">
       </button>
     </li>
     <li class="photo-processing__option">
-      <button class="button" class="photo-processing__button">
+      <button type="button" class="photo-processing__button">
         <img  src="img/fill.svg" class="photo-processing__icon" alt="Добавить яркость" width="43" height="47">
       </button>
     </li>
     <li class="photo-processing__option">
-      <button class="button" class="photo-processing__button">
+      <button type="button" class="photo-processing__button">
         <img src="img/contrast.svg" class="photo-processing__icon" alt="Добавить контраст" width="44" height="41">
       </button>
     </li>
