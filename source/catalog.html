@@ -7,7 +7,7 @@
 <body class="body">
 <header class="catalog-header">
   <a class="logo">
-    <img class="logo__image logo-image__mobile" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
+    <img class="logo__image" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
   </a>
   <nav class="main-menu">
     <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -19,7 +19,7 @@
           </a>
         </li>
         <li class="main-menu__item">
-          <a href="photo.html">
+          <a href="#">
             Фотографии
           </a>
         </li>
@@ -38,9 +38,9 @@
   </nav>
 </header>
 <main class="main-container">
-  <h1 class="user-photo">Фотографии
+  <h1 class="main-container__headline">Фотографии
     пользователей </h1>
-  <p class="photo-description">Взгляните на фотографии, которые выкладывают пользователи!
+  <p class="main-container__description">Взгляните на фотографии, которые выкладывают пользователи!
     Видите, как не хватает ваших?</p>
   <div class="user-review">
     <img src="img/panorama.jpg" alt="Панорама" class="user-review__photo" width="320" height="137">
@@ -55,9 +55,9 @@
   </div>
   <div class="user-review">
     <img src="img/car.jpg" alt="Машина" class="user-review__photo" width="280" height="180">
-  <blockquote class="user-review__quote">
-    <cite class="user-reviews__author-name">Левон<span class="user-review__time">(5 часов назад)</span></cite>
-    <p class="user-review__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+    <blockquote class="user-review__quote">
+      <cite class="user-reviews__author-name">Левон<span class="user-review__time">(5 часов назад)</span></cite>
+      <p class="user-review__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
     </blockquote>
     <span class="user-review__likes">Нравится: 356</span>
   </div>
@@ -96,33 +96,33 @@
   <div class="user-review">
     <img src="img/plane.jpg" alt="Самолет" class="user-review__photo" width="280" height="180">
     <blockquote class="user-review__quote">
-    <cite class="user-review__author-name">Надежда<span class="user-review__time">(45 часов назад)</span></cite>
-    <p class="user-review__text">Всем GM и взаимные лайки!</p>
+      <cite class="user-review__author-name">Надежда<span class="user-review__time">(45 часов назад)</span></cite>
+      <p class="user-review__text">Всем GM и взаимные лайки!</p>
     </blockquote>
     <span class="user-review__likes">Нравится: 2560</span>
+    <p class="user-review__slogan">Затмите их всех!
+      Выкладывайте все, что накопилось в телефоне!</p>
   </div>
-  <p class="user-review__slogan">Затмите их всех!
-    Выкладывайте все, что накопилось в телефоне!</p>
   <div class="photo-processing">
-  <img src="img/winter.jpg" alt="Зимний пейзаж" class="user-review__photo" width="280" height="374">
-  <ul class="photo-processing__functions">
-    <li class="photo-processing__option photo-processing__option--current">
-      <button type="button" class="photo-processing__button">
-        <img src="img/crop.svg" class="photo-processing__icon" alt="Кадрировать картинку" width="47" height="65">
-      </button>
-    </li>
-    <li class="photo-processing__option">
-      <button type="button" class="photo-processing__button">
-        <img  src="img/fill.svg" class="photo-processing__icon" alt="Добавить яркость" width="43" height="47">
-      </button>
-    </li>
-    <li class="photo-processing__option">
-      <button type="button" class="photo-processing__button">
-        <img src="img/contrast.svg" class="photo-processing__icon" alt="Добавить контраст" width="44" height="41">
-      </button>
-    </li>
-  </ul>
-    <input type="range" class="photo-processing__option--range">
+    <img src="img/winter.jpg" alt="Зимний пейзаж" class="photo-processing__image" width="280" height="374">
+    <ul class="photo-processing__functions">
+      <li class="photo-processing__option photo-processing__option--current">
+        <button type="button" class="photo-processing__button">
+          <img src="img/crop.svg" class="photo-processing__icon" alt="Кадрировать картинку" width="47" height="65">
+        </button>
+      </li>
+      <li class="photo-processing__option">
+        <button type="button" class="photo-processing__button">
+          <img src="img/fill.svg" class="photo-processing__icon" alt="Добавить яркость" width="43" height="47">
+        </button>
+      </li>
+      <li class="photo-processing__option">
+        <button type="button" class="photo-processing__button">
+          <img src="img/contrast.svg" class="photo-processing__icon" alt="Добавить контраст" width="44" height="41">
+        </button>
+      </li>
+    </ul>
+    <input type="range" class="photo-processing__range">
   </div>
 </main>
 <footer class="main-footer">
@@ -148,6 +148,6 @@
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </div>
-  </footer>
+</footer>
 </body>
 </html>
