@@ -8,28 +8,26 @@
 <body class="body">
 <header class="page-header">
   <a class="page-header__logo">
-    <img class="page-header__logo--image" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
+    <img class="page-header__image" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
   </a>
   <nav class="main-menu">
     <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <ul class="main-menu__list">
-      <li class="main-menu__item main-nav__item--active">
-        <a href="index.html" class="main-menu__link">
+      <li class="main-menu__item">
+        <a href="index.html" class="main-menu__item-content">
           Главная
         </a>
       </li>
       <li class="main-menu__item">
-        <a href="catalog.html" class="main-menu__link">
+        <a href="catalog.html" class="main-menu__item-content">
           Фотографии
         </a>
       </li>
       <li class="main-menu__item">
-        <a href="form.html" class="main-menu__link">
-          Конкурс
-        </a>
+        <span class="main-menu__item-content">Конкурс</span>
       </li>
       <li class="main-menu__item">
-        <a href="#" class="main-menu__link">
+        <a href="#" class="main-menu__item-content">
           HTML Academy
         </a>
       </li>
@@ -53,18 +51,17 @@
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--checkbox">
       <legend class="form__legend form__legend--checkbox">Ваши безбашенные достижения в путешествии</legend>
-      <label class="form__label form__label--achievement"><input type="checkbox" name="achievment"
+      <label class="form__label form__label--checkbox"><input type="checkbox" name="achievment"
                                         class="form__input" checked>Сделал селфи с акулой</label><br>
-      <label class="form__label form__label--achievement"><input type="checkbox" name="achievment" class="form__input"
+      <label class="form__label form__label--checkbox"><input type="checkbox" name="achievment" class="form__input"
                                         checked>Обгорел на пляже</label><br>
-      <label class="form__label form__label--achievement"><input type="checkbox" name="achievment" class="form__input">Видел
+      <label class="form__label form__label--checkbox"><input type="checkbox" name="achievment" class="form__input">Видел
         Чака Норриса</label><br>
-      <label class="form__label form__label--achievement"><input type="checkbox" name="achievment" class="form__input">Накупил
+      <label class="form__label form__label--checkbox"><input type="checkbox" name="achievment" class="form__input">Накупил
         сувениров</label><br>
-      <label class="form__label form__label--achievement"><input type="checkbox" name="achievment" class="form__input"
+      <label class="form__label form__label--checkbox"><input type="checkbox" name="achievment" class="form__input"
                                         checked>Удержал башню</label><br>
-      <label class="form__label form__label--achievement"><input type="checkbox" name="achievment"
-                                        class="form__input">Разгромил отель</label>
+      <label class="form__label form__label--checkbox"><input type="checkbox" name="achievment" class="form__input">Разгромил отель</label>
     </fieldset>
     <fieldset class="form__fieldset">
       <label class="form__label">НОМЕР ТЕЛЕФОНА<br>
@@ -84,9 +81,9 @@
         Phone</label>
     </fieldset>
     <fieldset class="form__fieldset">
-      <legend class="form__legend form__legend--textarea">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+      <label class="form__legend form__legend--textarea">ОПИШИТЕ СВОИ ЭМОЦИИ<br>
       <textarea name="comment" id="comment-field" class="form__textarea " rows="10">Можно прям в красках, не
-стесняясь в выражениях</textarea>
+стесняясь в выражениях</textarea></label>
     </fieldset>
     <input type="submit" class="form__submit-button" value="Отправить форму">
     <p class="form__requested-field">* — обязательные поля</p>
