@@ -3,103 +3,113 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
-<header class="catalog-header">
-  <a class="logo">
-    <img class="logo__image" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
+<header class="page-header">
+  <a class="page-header__logo">
+    <img class="page-header__image" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
   </a>
   <nav class="main-menu">
     <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <div class="main-menu__wrapper">
-      <ul class="main-menu__list">
-        <li class="main-menu__item main-menu__item--active">
-          <a href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="main-menu__item">
-          <a href="#">
-            Фотографии
-          </a>
-        </li>
-        <li class="main-menu__item">
-          <a href="form.html">
-            Конкурс
-          </a>
-        </li>
-        <li class="main-menu__item">
-          <a href="#">
-            HTML Academy
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ul class="main-menu__list">
+      <li class="main-menu__item">
+        <a href="#" class="main-menu__item-content">
+          Главная
+        </a>
+      </li>
+      <li class="main-menu__item">
+        <span class="main-menu__item-content">Фотографии</span>
+      </li>
+      <li class="main-menu__item">
+        <a href="form.html" class="main-menu__item-content">
+          Конкурс
+        </a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="main-menu__item-content">
+          HTML Academy
+        </a>
+      </li>
+    </ul>
   </nav>
 </header>
 <main class="main-container">
-  <h1 class="main-container__headline">Фотографии
-    пользователей </h1>
+  <h1 class="main-container__headline main-container__headline--catalog">Фотографии пользователей </h1>
   <p class="main-container__description">Взгляните на фотографии, которые выкладывают пользователи!
     Видите, как не хватает ваших?</p>
   <div class="user-review">
-    <img src="img/panorama.jpg" alt="Панорама" class="user-review__photo" width="320" height="137">
-    <blockquote class="user-review__quote">
-      <cite class="user-review__author-name">Анна<span class="user-review__time">(5 минут назад)</span></cite>
-      <p class="user-review__text">Прыгать или нет? Напишите в
-        комментарии свой совет и
-        смотрите прямую трансляцию в
-        перископе, задавайте свои вопросы!</p>
-    </blockquote>
-    <span class="user-review__likes">Нравится: 215</span>
+    <div class="user-review__wrapper">
+      <img src="img/panorama.jpg" alt="Панорама" class="user-review__photo" width="320" height="137">
+      <blockquote class="user-review__quote">
+        <cite class="user-review__author-name">Анна<span class="user-review__time">(5 минут назад)</span></cite>
+        <p class="user-review__text">Прыгать или нет? Напишите в
+          комментарии свой совет и
+          смотрите прямую трансляцию в
+          перископе, задавайте свои вопросы!</p>
+      </blockquote>
+      <span class="user-review__likes">Нравится: 215</span>
+    </div>
   </div>
   <div class="user-review">
-    <img src="img/car.jpg" alt="Машина" class="user-review__photo" width="280" height="180">
-    <blockquote class="user-review__quote">
-      <cite class="user-reviews__author-name">Левон<span class="user-review__time">(5 часов назад)</span></cite>
-      <p class="user-review__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-    </blockquote>
-    <span class="user-review__likes">Нравится: 356</span>
+    <div class="user-review__wrapper">
+      <img src="img/car.jpg" alt="Машина" class="user-review__photo" width="280" height="180">
+      <blockquote class="user-review__quote">
+        <cite class="user-reviews__author-name">Левон<span class="user-review__time">(5 часов назад)</span></cite>
+        <p class="user-review__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+        <span class="user-review__likes">Нравится: 356</span>
+      </blockquote>
+    </div>
   </div>
   <div class="user-review">
-    <img src="img/drum.jpg" alt="Барабанная установка" class="user-review__photo" width="280" height="180">
-    <blockquote class="user-review__quote">
-      <cite class="user-reviews__author-name">Антон<span class="user-review__time">(12 часов назад)</span></cite>
-      <p class="user-reviews__text">Соседи будут рады!</p>
-    </blockquote>
-    <span class="user-review__likes">Нравится: 666</span>
+    <div class="user-review__wrapper">
+      <img src="img/drum.jpg" alt="Барабанная установка" class="user-review__photo" width="280" height="180">
+      <blockquote class="user-review__quote">
+        <cite class="user-reviews__author-name">Антон<span class="user-review__time">(12 часов назад)</span></cite>
+        <p class="user-reviews__text">Соседи будут рады!</p>
+      </blockquote>
+      <span class="user-review__likes">Нравится: 666</span>
+    </div>
   </div>
   <div class="user-review">
-    <img src="img/window.jpg" alt="Окна" class="user-review__photo" width="280" height="180">
-    <blockquote class="user-review__quote">
-      <cite class="user-review__author-name">Борис<span class="user-review__time">(20 часов назад)</span></cite>
-      <p class="user-review__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-    </blockquote>
-    <span class="user-review__likes">Нравится: 215</span>
+    <div class="user-review__wrapper">
+      <img src="img/window.jpg" alt="Окна" class="user-review__photo" width="280" height="180">
+      <blockquote class="user-review__quote">
+        <cite class="user-review__author-name">Борис<span class="user-review__time">(20 часов назад)</span></cite>
+        <p class="user-review__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+      </blockquote>
+      <span class="user-review__likes">Нравится: 215</span>
+    </div>
   </div>
   <div class="user-review">
-    <img src="img/fair.jpg" alt="Ярмарка" class="user-review__photo" width="280" height="180">
-    <blockquote class="user-review__quote">
-      <cite class="user-review__author-name">Сергей<span class="user-review__time">(25 часов назад)</span></cite>
-      <p class="user-review__text">Самая кубанская в мире!!</p>
-    </blockquote>
-    <span class="user-review__likes">Нравится: 4</span>
+    <div class="user-review__wrapper">
+      <img src="img/fair.jpg" alt="Ярмарка" class="user-review__photo" width="280" height="180">
+      <blockquote class="user-review__quote">
+        <cite class="user-review__author-name">Сергей<span class="user-review__time">(25 часов назад)</span></cite>
+        <p class="user-review__text">Самая кубанская в мире!!</p>
+      </blockquote>
+      <span class="user-review__likes">Нравится: 4</span>
+    </div>
   </div>
   <div class="user-review">
-    <img src="img/mountains.jpg" alt="Горы" class="user-review__photo" width="280" height="180">
-    <blockquote class="user-review__quote">
-      <cite class="user-review__author-name">Максим<span class="user-review__time">(40 часов назад)</span></cite>
-      <p class="user-review__text">Где снег-то?</p>
-    </blockquote>
-    <span class="user-review__likes">Нравится: 150</span>
+    <div class="user-review__wrapper">
+      <img src="img/mountains.jpg" alt="Горы" class="user-review__photo" width="280" height="180">
+      <blockquote class="user-review__quote">
+        <cite class="user-review__author-name">Максим<span class="user-review__time">(40 часов назад)</span></cite>
+        <p class="user-review__text">Где снег-то?</p>
+      </blockquote>
+      <span class="user-review__likes">Нравится: 150</span>
+    </div>
   </div>
   <div class="user-review">
-    <img src="img/plane.jpg" alt="Самолет" class="user-review__photo" width="280" height="180">
-    <blockquote class="user-review__quote">
-      <cite class="user-review__author-name">Надежда<span class="user-review__time">(45 часов назад)</span></cite>
-      <p class="user-review__text">Всем GM и взаимные лайки!</p>
-    </blockquote>
-    <span class="user-review__likes">Нравится: 2560</span>
+    <div class="user-review__wrapper">
+      <img src="img/plane.jpg" alt="Самолет" class="user-review__photo" width="280" height="180">
+      <blockquote class="user-review__quote">
+        <cite class="user-review__author-name">Надежда<span class="user-review__time">(45 часов назад)</span></cite>
+        <p class="user-review__text">Всем GM и взаимные лайки!</p>
+      </blockquote>
+      <span class="user-review__likes">Нравится: 2560</span>
+    </div>
     <p class="user-review__slogan">Затмите их всех!
       Выкладывайте все, что накопилось в телефоне!</p>
   </div>

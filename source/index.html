@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
-<header class="index-header">
-  <a class="logo">
-    <img class="logo__image" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
+<header class="page-header">
+  <a class="page-header__logo">
+    <img class="page-header__image" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
   </a>
   <nav class="main-menu">
     <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <ul class="main-menu__list">
-      <li class="main-menu__item main-nav__item--active">
-        <a href="#">
-          Главная
-        </a>
+      <li class="main-menu__item">
+        <span class="main-menu__item-content">Главная</span>
       </li>
       <li class="main-menu__item">
-        <a href="catalog.html">
+        <a href="catalog.html" class="main-menu__item-content">
           Фотографии
         </a>
       </li>
       <li class="main-menu__item">
-        <a href="form.html">
+        <a href="form.html" class="main-menu__item-content">
           Конкурс
         </a>
       </li>
       <li class="main-menu__item">
-        <a href="#">
+        <a href="#" class="main-menu__item-content">
           HTML Academy
         </a>
       </li>
@@ -36,9 +35,12 @@
   </nav>
 </header>
 <main class="main-container">
-    <h1 class="visually-hidden">Приложение Pink</h1>
-    <p class="main-container__slogan">Взгляните на жизнь иначе!</p>
-    <section class="download-container">
+  <h1 class="visually-hidden">Приложение Pink</h1>
+  <div class="main-container__headline-image">
+    <p class="main-container__headline main-container__headline--index">Взгляните на жизнь иначе!</p>
+    <img src="img/filter.svg" alt="Фильтр приложения" class="main-container__image" height="268">
+  </div>
+  <section class="download-container">
     <button class="download-container__button" type="button">Скачать приложение</button>
     <div class="operating-systems">
       <ul class="operating-systems__list">
@@ -87,11 +89,12 @@
             новых</p>
         </li>
       </ul>
+      <img src="img/index-filter1.png" alt="Фильтр приложения" class="advantages__image" height="268">
     </div>
   </section>
   <section class="reviews">
     <div class="reviews__wrapper ">
-      <h2 class="reviews__title">Отзывы о нас</h2>
+      <h2 class="reviews__title visually-hidden">Отзывы о нас</h2>
       <div class="reviews__list">
         <blockquote class="reviews__item">
           <cite class="reviews__author-name">Николай Петров</cite>
@@ -124,7 +127,7 @@
     </h2>
     <table class="price-table">
       <tr class="price-table__row">
-        <th class="price-table__header"></th>
+        <th class="price-table__header price-table__header--empty"></th>
         <th class="price-table__header">
           <span class="price-table__name">База</span>
           <p class="price-table__value">1,99 USD</p>
@@ -170,20 +173,20 @@
       Свяжитесь с нами!</p>
     <ul class="contacts__list">
       <li class="contacts__item">
-        <span class="contacts__instruction">Звоните:</span>
+        <span class="contacts__instruction">Звоните:</span><br>
         <a href="tel:78125556666" class="contacts__phone">+7 (812) 555-66-66</a>
       </li>
       <li class="contacts__item">
-        <span class="contacts__instruction">Пишите:</span>
+        <span class="contacts__instruction">Пишите:</span><br>
         <a href="mail@htmlacademy.ru" class="contacts__email"> mail@htmlacademy.ru</a>
       </li>
       <li class="contacts__item">
-        <span class="contacts__instruction">Приезжайте в гости:</span>
+        <span class="contacts__instruction">Приезжайте в гости:</span><br>
         <a href="#" class="contacts__address"> ул. Большая
           Конюшенная, 19/8</a>
       </li>
     </ul>
-    <img src="img/map.jpg" class="contacts__map contacts__map--mobile" alt="Расположение на карте">
+    <img src="img/map.jpg" class="contacts__map contacts__map--mobile" width="100%" alt="Расположение на карте">
   </section>
 </main>
 <footer class="main-footer">
@@ -205,7 +208,7 @@
       </ul>
     </div>
     <div class="copyright">
-      <b class="copyright__text">Разработано:</b>
+      <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </div>
