@@ -1,3 +1,8 @@
+.reviews {
+  padding: 50px 20px 60px;
+  text-align: center;
+}
+
 .reviews__author-name {
   font-weight: 700;
   font-size: 18px;
@@ -11,12 +16,32 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .reviews__item {
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.reviews {
-  padding: 50px 20px 60px;
+.reviews__author-name--description {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}
+
+.reviews__author-name--item {
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.reviews__author-name--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

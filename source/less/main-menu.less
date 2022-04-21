@@ -5,13 +5,30 @@
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .main-menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: @desktop-width) {
+  .main-menu__list {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-menu__toggle {
+    display: none;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .main-menu__item {
+    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
 }
 
 .main-menu__item-content {
