@@ -16,15 +16,19 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+  order: 1;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    order: 0;
   }
 }
 
 .reviews__item {
   text-align: center;
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__author-name--description {
@@ -32,16 +36,16 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
-}
 
-.reviews__author-name--item {
   @media (max-width: @tablet-width) {
     display: none;
   }
 }
 
-.reviews__author-name--mobile {
+.reviews__author {
+  order: 0;
+
   @media (min-width: @tablet-width) {
-    display: none;
+    order: 1;
   }
 }
