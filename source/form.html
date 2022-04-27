@@ -45,35 +45,50 @@
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
     <div class="form__list">
       <fieldset class="form__fieldset form__fieldset--name">
-        <label class="form__label form__label--contacts">ФАМИЛИЯ:
-          <input type="text" class="form__input" name="login" placeholder="Укажите фамилию *"></label><br>
-        <label class="form__label form__label--contacts">ИМЯ:
-          <input type="text" class="form__input" name="login" placeholder="Введите ваше имя *">
+        <label class="form__label form__label--name">ФАМИЛИЯ:
+          <input type="text" class="form__input form__input--name" name="login" placeholder="Укажите фамилию *"></label><br>
+        <label class="form__label form__label--name">ИМЯ:
+          <input type="text" class="form__input form__input--name" name="login" placeholder="Введите ваше имя *">
         </label><br>
-        <label class="form__label form__label--contacts">ОТЧЕСТВО:
-          <input type="text" name="login" class="form__input" placeholder="Ну и отчество тоже">
+        <label class="form__label form__label--name">ОТЧЕСТВО:
+          <input type="text" name="login" class="form__input form__input--name" placeholder="Ну и отчество тоже">
         </label><br>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--checkbox">
         <legend class="form__legend form__legend--checkbox">Ваши безбашенные достижения в путешествии</legend>
-        <label class="form__label"><input type="checkbox" name="achievment" class="form__input" checked>Сделал селфи с
-          акулой</label><br>
-        <label class="form__label"><input type="checkbox" name="achievment" class="form__input" checked>Обгорел на пляже</label><br>
-        <label class="form__label"><input type="checkbox" name="achievment" class="form__input">Видел Чака
-          Норриса</label><br>
-        <label class="form__label"><input type="checkbox" name="achievment" class="form__input">Накупил
-          сувениров</label><br>
-        <label class="form__label"><input type="checkbox" name="achievment" class="form__input" checked>Удержал
-          башню</label><br>
-        <label class="form__label"><input type="checkbox" name="achievment" class="form__input">Разгромил отель</label>
+        <div class="form__checkbox-labels">
+          <div class="form__checkbox-first">
+            <label class="form__label"><input type="checkbox" name="achievment" class="form__input" checked>Сделал селфи
+              с акулой</label><br>
+            <label class="form__label"><input type="checkbox" name="achievment" class="form__input" checked>Обгорел на
+              пляже</label><br>
+          </div>
+          <div class="form__checkbox-second">
+            <label class="form__label"><input type="checkbox" name="achievment" class="form__input">Видел Чака
+              Норриса</label><br>
+            <label class="form__label"><input type="checkbox" name="achievment" class="form__input">Накупил
+              сувениров</label><br>
+          </div>
+          <div class="form__checkbox-third">
+            <label class="form__label"><input type="checkbox" name="achievment" class="form__input" checked>Удержал
+              башню</label><br>
+            <label class="form__label"><input type="checkbox" name="achievment" class="form__input">Разгромил
+              отель</label>
+          </div>
+        </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--contacts">
         <legend class="form__legend form__legend--contacts">контактная информация</legend>
-        <label class="form__label form__label--contacts">НОМЕР ТЕЛЕФОНА<br>
-          <input type="text" name="login" class="form__input" placeholder="Номер, пожалуйста"></label><br>
-        <label class="form__label form__label--contacts">АДРЕС ПОЧТЫ<br>
-          <input type="text" name="login" class="form__input" placeholder="Введите почту *">
-        </label><br>
+        <div class="form__contacts-labels">
+          <div class="form__contacts-section">
+          <label class="form__label form__label--contacts">НОМЕР ТЕЛЕФОНА</label><br>
+            <input type="text" name="login" class="form__input form__input--contacts" placeholder="Номер, пожалуйста"><br>
+          </div>
+          <div class="form__contacts-section">
+          <label class="form__label form__label--contacts">АДРЕС ПОЧТЫ</label><br>
+            <input type="text" name="login" class="form__input form__input--contacts" placeholder="Введите почту *"><br>
+          </div>
+        </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--radio">
         <legend class="form__legend form__legend--radio">С каким приложением путешествовали?</legend>
@@ -90,8 +105,10 @@
 стесняясь в выражениях</textarea>
       </fieldset>
     </div>
-    <input type="submit" class="form__submit-button" value="Отправить форму">
-    <p class="form__requested-field">* — обязательные поля</p>
+    <div class="form__submit">
+      <input type="submit" class="form__submit-button" value="Отправить форму">
+      <p class="form__requested-field">* — обязательные поля</p>
+    </div>
   </form>
 </main>
 <footer class="main-footer">
