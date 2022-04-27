@@ -2,69 +2,74 @@
 <html lang="ru" class="page">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
 <header class="page-header">
-  <a class="page-header__logo">
-    <img class="page-header__image" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение Pink">
-  </a>
-  <nav class="main-menu">
-    <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <ul class="main-menu__list">
-      <li class="main-menu__item">
-        <span class="main-menu__item-content">Главная</span>
-      </li>
-      <li class="main-menu__item">
-        <a href="catalog.html" class="main-menu__item-content">
-          Фотографии
-        </a>
-      </li>
-      <li class="main-menu__item">
-        <a href="form.html" class="main-menu__item-content">
-          Конкурс
-        </a>
-      </li>
-      <li class="main-menu__item">
-        <a href="#" class="main-menu__item-content">
-          HTML Academy
-        </a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main class="main-container">
-  <h1 class="visually-hidden">Приложение Pink</h1>
-  <div class="main-container__headline-image">
-    <p class="main-container__headline main-container__headline--index">Взгляните на жизнь иначе!</p>
-    <img src="img/filter.svg" alt="Фильтр приложения" class="main-container__image" height="268">
-  </div>
-  <section class="download-container">
-    <button class="download-container__button" type="button">Скачать приложение</button>
-    <div class="operating-systems">
-      <ul class="operating-systems__list">
-        <li class="operating-system__item">
-          <a href="#" class="operating-system__link">
-            <img src="img/apple.svg" class="operating-system__icon" alt="Операционая система IOS" width="47" height="65">
+  <div class="page-header__wrapper">
+    <a class="page-header__logo"></a>
+    <nav class="main-menu">
+      <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <span class="main-menu__item-content">Главная</span>
+        </li>
+        <li class="main-menu__item">
+          <a href="catalog.html" class="main-menu__item-content">
+            Фотографии
           </a>
         </li>
-        <li class="operating-system__item">
-          <a href="#" class="operating-system__link">
-            <img src="img/android.svg" class="operating-system__icon" alt="Операционая система Android" width="43" height="47">
+        <li class="main-menu__item">
+          <a href="form.html" class="main-menu__item-content">
+            Конкурс
           </a>
         </li>
-        <li class="operating-system__item">
-          <a href="#" class="operating-system__link">
-            <img src="img/windows.svg" class="operating-system__icon" alt="Операционая система Windows" width="44" height="41">
+        <li class="main-menu__item">
+          <a href="#" class="main-menu__item-content">
+            HTML Academy
           </a>
         </li>
       </ul>
-      <p class="download-container__information">
-        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-      </p>
+    </nav>
+  </div>
+</header>
+<main class="main-container">
+  <div class="main-container__intro">
+    <h1 class="visually-hidden">Приложение Pink</h1>
+    <div class="main-container__headline-image">
+      <p class="main-container__headline main-container__headline--index">Взгляните на жизнь иначе!</p>
+      <img src="img/filter.svg" alt="Фильтр приложения" class="main-container__image" height="268">
     </div>
-  </section>
+    <section class="download-container">
+      <div class="download-container__content">
+        <button class="download-container__button" type="button">Скачать приложение</button>
+        <div class="operating-systems">
+          <ul class="operating-systems__list">
+            <li class="operating-systems__item">
+              <a href="#" class="operating-systems__link">
+                <img src="img/apple.svg" class="operating-systems__icon" alt="Операционая система IOS" width="47" height="65">
+              </a>
+            </li>
+            <li class="operating-systems__item">
+              <a href="#" class="operating-system__link">
+                <img src="img/android.svg" class="operating-systems__icon" alt="Операционая система Android" width="43" height="47">
+              </a>
+            </li>
+            <li class="operating-systems__item">
+              <a href="#" class="operating-systems__link">
+                <img src="img/windows.svg" class="operating-systems__icon" alt="Операционая система Windows" width="44" height="41">
+              </a>
+            </li>
+          </ul>
+          <p class="download-container__information">
+            Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
   <div class="advertising">
     <p class="advertising__slogan">Устали от серости мегаполиса?</p>
     <p class="advertising__slogan">Нам есть, что вам предложить!</p>
@@ -89,25 +94,53 @@
             новых</p>
         </li>
       </ul>
-      <img src="img/index-filter1.png" alt="Фильтр приложения" class="advantages__image" height="268">
+      <ul class="advantage-image__list">
+        <li class="advantage-image__item advantage-image__item--hidden">
+          <img src="img/index-filter3.png" alt="Фильтр приложения" class="advantage-image__icon">
+        </li>
+        <li class="advantage-image__item advantage-image__item--hidden">
+          <img src="img/index-filter1.png" alt="Фильтр приложения" class="advantage-image__icon">
+        </li>
+        <li class="advantage-image__item">
+          <img src="img/index-filter2.png" alt="Фильтр приложения" class="advantage-image__icon">
+        </li>
+      </ul>
     </div>
   </section>
+  <div class="time-effect">
+    <img src="img/effect.png" class="time-effect__image">
+    <div class="time-effect__information">
+      <h1 class="time-effect__headline">Эффект на 24 часа!</h1>
+      <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится
+        целые сутки!</p>
+      <a href="#" class="time-effect__link">Узнать больше об исследовании</a>
+    </div>
+  </div>
   <section class="reviews">
     <div class="reviews__wrapper ">
       <h2 class="reviews__title visually-hidden">Отзывы о нас</h2>
       <div class="reviews__list">
         <blockquote class="reviews__item">
-          <cite class="reviews__author-name">Николай Петров</cite>
+          <div class="reviews__author">
+            <cite class="reviews__author-name">Николай Петров</cite><br>
+            <span class="reviews__author-name--description">25 лет, водитель трамвая</span>
+          </div>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
-        <blockquote class="reviews__item ">
-          <cite class="reviews__author-name">Николай Петров</cite>
+        <blockquote class="reviews__item">
+          <div class="reviews__author">
+            <cite class="reviews__author-name">Николай Петров</cite><br>
+            <span class="reviews__author-name--description">25 лет, водитель трамвая</span>
+          </div>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
-        <blockquote class="reviews__item ">
-          <cite class="reviews__author-name">Николай Петров</cite>
+        <blockquote class="reviews__item">
+          <div class="reviews__author">
+            <cite class="reviews__author-name">Николай Петров</cite><br>
+            <span class="reviews__author-name--description">25 лет, водитель трамвая</span>
+          </div>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
@@ -169,23 +202,25 @@
     </p>
   </section>
   <section class="contacts">
-    <p class="contacts__description">Остались вопросы?<br>
-      Свяжитесь с нами!</p>
-    <ul class="contacts__list">
-      <li class="contacts__item">
-        <span class="contacts__instruction">Звоните:</span><br>
-        <a href="tel:78125556666" class="contacts__phone">+7 (812) 555-66-66</a>
-      </li>
-      <li class="contacts__item">
-        <span class="contacts__instruction">Пишите:</span><br>
-        <a href="mail@htmlacademy.ru" class="contacts__email"> mail@htmlacademy.ru</a>
-      </li>
-      <li class="contacts__item">
-        <span class="contacts__instruction">Приезжайте в гости:</span><br>
-        <a href="#" class="contacts__address"> ул. Большая
-          Конюшенная, 19/8</a>
-      </li>
-    </ul>
+    <div class="contacts__wrapper">
+      <p class="contacts__description">Остались вопросы?<br>
+        Свяжитесь с нами!</p>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <span class="contacts__instruction">Звоните:</span><br>
+          <a href="tel:78125556666" class="contacts__phone">+7 (812) 555-66-66</a>
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__instruction">Пишите:</span><br>
+          <a href="mail@htmlacademy.ru" class="contacts__email"> mail@htmlacademy.ru</a>
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__instruction">Приезжайте в гости:</span><br>
+          <a href="#" class="contacts__address"> ул. Большая
+            Конюшенная, 19/8</a>
+        </li>
+      </ul>
+    </div>
     <img src="img/map.jpg" class="contacts__map contacts__map--mobile" width="100%" alt="Расположение на карте">
   </section>
 </main>
@@ -203,7 +238,8 @@
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+            Ютубе</a>
         </li>
       </ul>
     </div>

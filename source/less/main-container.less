@@ -1,10 +1,19 @@
 .main-container__headline {
-  margin: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   color: #ffffff;
-  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 82px;
+    margin-left: 48px;
+    width: 246px;
+  }
 }
 
 .main-container__headline--index {
@@ -13,6 +22,7 @@
 
 .main-container__headline--catalog {
   padding: 36px 74px 84px;
+  margin: 0 auto;
 }
 
 .main-container__description {
@@ -28,6 +38,7 @@
 }
 
 .main-container__information {
+  margin: 0;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -37,10 +48,40 @@
 
 .main-container__headline--form {
   padding: 36px 40px 63px 52px;
+  width: 620px;
+  margin: 0 auto;
 }
 
 .main-container__headline-image {
+  padding-top: 29px;
+}
+
+.main-container__intro {
+  text-align: center;
   background: url("../img/back-mobile.jpg") no-repeat;
   background-size: 100%;
-  padding-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    overflow: hidden;
+    position: relative;
+    background: url("../img/back-tablet.png") no-repeat;
+    background-size: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/back-desktop.png") no-repeat;
+    background-size: 100%;
+  }
+}
+
+.main-container__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+    height: 545px;
+    right: -90px;
+  }
 }

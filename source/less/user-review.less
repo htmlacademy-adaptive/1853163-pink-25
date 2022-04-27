@@ -1,12 +1,86 @@
 .user-review {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0;
+  margin: 0;
   text-align: center;
   padding-bottom: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "panorama panorama"
+      "car drum"
+      "window fair"
+      "mountains plane";
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 54px;
+    grid-template-areas:
+      "panorama panorama panorama"
+      "car drum window"
+      "fair mountains plane";
+  }
 }
 
-.user-review__wrapper {
+.user-review__item--panorama {
+  grid-area: panorama;
+}
+
+.user-review__item--car {
+  grid-area: car;
+}
+
+.user-review__item--drum {
+  grid-area: drum;
+}
+
+.user-review__item--window {
+  grid-area: window;
+}
+
+.user-review__item--fair {
+  grid-area: fair;
+}
+
+.user-review__item--mountains {
+  grid-area: mountains;
+}
+
+.user-review__item--plane {
+  grid-area: plane;
+}
+
+.user-review__information {
+  width: 280px;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
+.user-review__item {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.user-review__information--panorama {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 .user-review__author-name {

@@ -2,9 +2,39 @@
   background: rgb(0, 0, 0);
   opacity: 0.3;
   padding: 22px 20px 21px;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__logo {
+  display: block;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
   width: 74px;
   height: 23px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-image: url("../img/logo.svg");
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 145px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 147px;
+  }
+}
+
+.page-header__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }
