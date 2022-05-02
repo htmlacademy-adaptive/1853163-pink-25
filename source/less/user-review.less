@@ -32,6 +32,11 @@
   grid-area: panorama;
 }
 
+.user-review__panorama-photo {
+  display: block;
+  width: 100vw;
+}
+
 .user-review__item--car {
   grid-area: car;
 }
@@ -59,10 +64,6 @@
 .user-review__information {
   width: 280px;
   background-color: #f2f2f2;
-
-  @media (min-width: @tablet-width) {
-    width: 300px;
-  }
 }
 
 .user-review__item {
@@ -118,4 +119,12 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+}
+
+.user-review__photo {
+  display: block;
+}
+
+.user-review__quote {
+  margin: 0;
 }

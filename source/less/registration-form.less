@@ -1,0 +1,26 @@
+.registration-form {
+  grid-area: registration;
+  border: none;
+  order: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.registration-form__label {
+  color: #d22856;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.registration-form__input {
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+}
