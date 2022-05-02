@@ -2,30 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
+  padding-left: 22px;
+  padding-right: 22px;
 
   @media (min-width: @desktop-width) {
     padding-left: 132px;
     padding-right: 132px;
-  }
-}
-
-.form__fieldset {
-  width: 100%;
-  border: none;
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
-  padding-left: 22px;
-  padding-right: 22px;
-
-  @media (min-width: @tablet-width) {
-    border: 2px solid #e5e5e5;
-    border-radius: 1px;
   }
 }
 
@@ -36,72 +18,14 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    column-gap: 74px;
-    row-gap: 69px;
+    column-gap: 75px;
+    row-gap: 70px;
     grid-template-areas:
-      "name radio"
-      "contacts contacts"
+      "registration radio"
+      "text text"
       "checkbox checkbox"
       "textarea textarea";
   }
-}
-
-.form__fieldset--name {
-  grid-area: name;
-  border: none;
-  order: 0;
-}
-
-.form__fieldset--checkbox {
-  grid-area: checkbox;
-  order: 1;
-
-  @media (min-width: @tablet-width) {
-    order: 3;
-  }
-}
-
-.form__fieldset--radio {
-  grid-area: radio;
-  order: 3;
-
-  @media (min-width: @tablet-width) {
-    order: 1;
-  }
-}
-
-.form__fieldset--textarea {
-  grid-area: textarea;
-  order: 4;
-}
-
-.form__label {
-  color: #283645;
-}
-
-.form__label--name {
-  color: #d22856;
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: @tablet-width) {
-    flex-direction: row;
-  }
-}
-
-.form__input--name {
-  @media (min-width: @tablet-width) {
-    flex-grow: 1;
-    margin-left: 20px;
-  }
-}
-
-.form__legend {
-  font-size: 14px;
-  line-height: 30px;
-  color: #d22856;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .form__submit-button {
@@ -114,31 +38,10 @@
   color: #ffffff;
 }
 
-.form__textarea {
-  border: 2px solid #e5e5e5;
-  border-radius: 1px;
-  width: 100%;
-}
-
 .form__requested-field {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-}
-
-.form__fieldset--checkbox,
-.form__fieldset--radio {
-  background-color: #f2f2f2;
-
-  @media (min-width: @tablet-width) {
-    background-color: #ffffff;
-  }
-}
-
-.form__legend--contacts {
-  @media (max-width: @tablet-width) {
-    display: none;
-  }
 }
 
 .form__submit {
@@ -151,52 +54,5 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 70px;
-  }
-}
-
-.form__contacts-labels {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.form__fieldset--contacts {
-  order: 2;
-  grid-area: contacts;
-}
-
-.form__contacts-section {
-  display: flex;
-  flex-direction: column;
-}
-
-.form__label--contacts {
-  order: 0;
-  color: #d22856;
-
-  @media (min-width: @tablet-width) {
-    order: 1;
-  }
-}
-
-.form__input--contacts {
-  order: 1;
-
-  @media (min-width: @tablet-width) {
-    order: 0;
-  }
-}
-
-.form__checkbox-labels {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
