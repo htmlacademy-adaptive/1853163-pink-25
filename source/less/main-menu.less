@@ -1,3 +1,12 @@
+.main-menu {
+  background: #283645;
+  width: auto;
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
+}
+
 .main-menu__item {
   font-weight: 700;
   font-size: 18px;
@@ -5,6 +14,13 @@
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+  }
 }
 
 .main-menu__list {
@@ -16,10 +32,8 @@
     width: 620px;
     display: flex;
     justify-content: space-between;
-  }
-
-  .main-menu__toggle {
-    display: none;
+    margin-top: 20px;
+    margin-bottom: 48px;
   }
 }
 
@@ -32,4 +46,87 @@
 .main-menu__item-content {
   color: #ffffff;
   text-decoration: none;
+}
+
+.main-menu__item-content:hover {
+  color: #d22856;
+}
+
+.main-menu__item-content:disabled {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.main-menu__toggle {
+  position: absolute;
+  top: -8px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 51px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-menu--opened .main-menu__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.main-menu--opened .main-menu__toggle:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#ffffff, 30%),
+    0 16px 0 0 fade(#ffffff, 30%);
+}
+
+.main-menu--closed .main-menu__toggle {
+  top: -8px;
+  right: 0;
+  left: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-menu--opened .main-menu__item {
+  display: none;
 }

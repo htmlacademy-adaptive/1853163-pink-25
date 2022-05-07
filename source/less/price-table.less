@@ -1,3 +1,19 @@
+.price-table {
+  table-layout: fixed;
+  width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    table-layout: auto;
+    min-width: 610px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 934px;
+  }
+}
+
 .price-table__header {
   background: #283645;
   border: 2px solid #283645;
@@ -32,11 +48,71 @@
   color: #283645;
   font-size: 14px;
   line-height: 30px;
+  padding: 23px 65px 23px 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 235px;
+  }
 }
 
 .price-table__filter,
-.price-table__chek-mark {
+.price-table__check-mark {
   background: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 1px 0 0 0;
+  width: 280px;
+  overflow: hidden;
+}
+
+.price-table__filter,
+.price-table__header--empty {
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price-table__hidden-filter {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price-table__present-icon {
+  background-image: url("../img/present-mark.svg");
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 77px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 100px;
+  }
+}
+
+.price-table__absent-icon {
+  background-image: url("../img/absent-mark.svg");
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  margin-left: 77px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 100px;
+  }
 }
