@@ -1,9 +1,14 @@
 .page-header {
-  background: rgb(0, 0, 0);
-  opacity: 0.3;
-  padding: 22px 20px 21px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 22px 0 0;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+}
+
+.page-header__color-grey {
+  background: #283645;
 }
 
 .page-header__logo {
@@ -12,6 +17,7 @@
   background-repeat: no-repeat;
   width: 74px;
   height: 23px;
+  margin: 0 auto 20px 20px;
 
   @media (min-width: @tablet-width) {
     display: block;
@@ -31,6 +37,8 @@
 }
 
 .page-header__wrapper {
+  position: relative;
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;

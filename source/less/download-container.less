@@ -28,7 +28,7 @@
   font-size: 18px;
   line-height: 18px;
   text-align: center;
-  background: #1d2631;
+  background: transparent;
   color: #ffffff;
   padding: 20px 40px;
   border: 2px solid #ffffff;
@@ -44,6 +44,16 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 67px;
   }
+}
+
+.download-container__button:hover {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+.download-container__button:active {
+  color: #d22856;
+  opacity: 0.3;
 }
 
 .download-container__information {

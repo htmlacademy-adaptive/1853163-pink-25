@@ -17,10 +17,18 @@
   text-align: center;
   color: #283645;
   order: 1;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     order: 0;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 690px;
   }
 }
 
@@ -47,5 +55,101 @@
 
   @media (min-width: @tablet-width) {
     order: 1;
+  }
+}
+
+.reviews__button {
+  width: 48px;
+  height: 60px;
+  color: #283645;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  background-image: url("../img/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reviews__button:hover {
+  color: #283645;
+  opacity: 0.6;
+}
+
+.reviews__button:focus {
+  opacity: 0.1;
+}
+
+.reviews__button--next {
+  transform: rotate(-180deg);
+}
+
+.reviews__toggles-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reviews__toggle {
+  margin: 0 4px;
+}
+
+.reviews__toggle-button {
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+  background: #283645;
+  opacity: 0.3;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.reviews__toggle-button:hover {
+  background: #283645;
+  opacity: 0.6;
+}
+
+.reviews__toggle-button:focus {
+  background: #283645;
+  opacity: 0.1;
+}
+
+.reviews__toggle-button--current {
+  background: #ffffff;
+  border: 3px solid #283645;
+}
+
+.reviews__wrapper {
+  position: relative;
+}
+
+.reviews__buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reviews::before {
+  content: "";
+  background-image: url("../img/quotes.svg");
+  width: 80px;
+  height: 65px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: @desktop-width) {
+    display: none;
   }
 }
