@@ -4,6 +4,7 @@
   order: 0;
   padding-left: 22px;
   padding-right: 22px;
+  padding-top: 15px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -19,8 +20,28 @@
 }
 
 .registration-form__input {
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  margin-bottom: 50px;
+
   @media (min-width: @tablet-width) {
     flex-grow: 1;
     margin-left: 20px;
+  }
+
+  &:hover {
+    border: 2px solid #283645;
+    border-radius: 1px;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+    border-radius: 1px;
   }
 }
