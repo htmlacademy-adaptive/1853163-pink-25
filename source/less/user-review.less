@@ -88,7 +88,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  text-align: center;
   color: #283645;
 }
 
@@ -109,9 +108,12 @@
 .user-review__likes {
   font-size: 12px;
   line-height: 24px;
-  text-align: right;
   text-transform: uppercase;
   color: #d22856;
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+  }
 }
 
 .user-review__slogan {
@@ -127,4 +129,53 @@
 
 .user-review__quote {
   margin: 0;
+  padding: 25px 10px 17px;
+  text-align: start;
+
+  @media (min-width: @tablet-width) {
+    padding: 30px;
+  }
+}
+
+.user-review__quote--panorama {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "author likes"
+      "text text";
+    column-gap: 300px;
+  }
+}
+
+.user-review__author-name--panorama {
+  grid-area: author;
+}
+
+.user-review__text--panorama {
+  grid-area: text;
+}
+
+.user-review__likes--panorama {
+  grid-area: likes;
+}
+
+.user-review__likes-icon {
+  background-image: url("../img/like.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+  margin-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-left: auto;
+  }
+}
+
+.user-review__likes-section {
+  display: flex;
+  align-items: center;
 }
