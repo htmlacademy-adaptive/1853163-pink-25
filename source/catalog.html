@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon16.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicons/favicon152.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="body">
 <header class="page-header body__page-header">
   <div class="page-header__wrapper">
-    <a class="page-header__logo"></a>
+    <a class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" height="40" width="147">
+        <source media="(min-width: 768px)" srcset="img/logo.svg" height="40" width="145">
+        <img src="img/logo-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
+      </picture>
+    </a>
     <nav class="main-menu main-menu--closed main-menu--nojs">
       <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-menu__list">
@@ -43,7 +53,13 @@
     Видите, как не хватает ваших?</p>
   <ul class="user-review">
     <li class="user-review__item user-review__item--panorama">
-      <img src="img/panorama.jpg" alt="Панорама" class="user-review__panorama-photo" width="100%" height="137">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/panorama-desktop.png 1x, img/panorama-desktop@2x.jpg 2x"
+                height="506">
+        <source media="(min-width: 768px)" srcset="img/panorama-tablet.png 1x, img/panorama-tablet@2x.jpg 2x"
+                height="509">
+        <img alt="Панорама" class="user-review__panorama-photo" src="img/panorama.jpg" srcset="img/panorama@2x.jpg 2x" width="100%" height="137">
+      </picture>
       <div class="user-review__information user-review__information--panorama">
         <blockquote class="user-review__quote user-review__quote--panorama">
           <cite class="user-review__author-name user-review__author-name--panorama">Анна<span class="user-review__time">(5 минут назад)</span></cite>
@@ -51,89 +67,103 @@
             комментарии свой совет и
             смотрите прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
-          <div class="user-review__likes-section">
-            <div class="user-review__likes-icon"></div>
-            <p class="user-review__likes user-review__likes--panorama">Нравится: 215</p>
-          </div>
+          <p class="user-review__likes user-review__likes--panorama">Нравится: 215</p>
         </blockquote>
       </div>
     </li>
     <li class="user-review__item user-review__item--car">
-      <img src="img/car.jpg" alt="Машина" class="user-review__photo" width="280" height="180">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/car-desktop.png 1x, img/car-desktop@2x.png 2x" height="400"
+                width="300">
+        <source media="(min-width: 768px)" srcset="img/car-tablet.png 1x, img/car-tablet@2x.jpg 2x" height="300"
+                width="300">
+        <img alt="Машина" class="user-review__photo" src="img/car.jpg" srcset="img/car@2x.jpg" width="280" height="180">
+      </picture>
       <div class="user-review__information">
         <blockquote class="user-review__quote">
           <cite class="user-reviews__author-name">Левон<span class="user-review__time">(5 часов назад)</span></cite>
           <p class="user-review__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <div class="user-review__likes-section">
-            <div class="user-review__likes-icon"></div>
-            <p class="user-review__likes">Нравится: 356</p>
-          </div>
+          <p class="user-review__likes">Нравится: 356</p>
         </blockquote>
-
       </div>
     </li>
     <li class="user-review__item user-review__item--drum">
-      <img src="img/drum.jpg" alt="Барабанная установка" class="user-review__photo" width="280" height="180">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/drum-desktop.png 1x, img/drum-desktop@2x.jpg 2x" height="400"
+                width="300">
+        <source media="(min-width: 768px)" srcset="img/drum-tablet.png 1x, img/drum-tablet@2x.jpg 2x" height="300"
+                width="300">
+        <img alt="Барабанная установка" class="user-review__photo" src="img/drum.jpg" srcset="img/drum@2x.jpg" width="280" height="180">
+      </picture>
       <div class="user-review__information">
         <blockquote class="user-review__quote">
           <cite class="user-reviews__author-name">Антон<span class="user-review__time">(12 часов назад)</span></cite>
           <p class="user-reviews__text">Соседи будут рады!</p>
-          <div class="user-review__likes-section">
-            <div class="user-review__likes-icon"></div>
-            <p class="user-review__likes">Нравится: 666</p>
-          </div>
+          <p class="user-review__likes">Нравится: 666</p>
         </blockquote>
       </div>
     </li>
     <li class="user-review__item user-review__item--window">
-      <img src="img/window.jpg" alt="Окна" class="user-review__photo" width="280" height="180">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/window-desktop.png 1x, img/window-desktop@2x.jpg 2x"
+                height="400" width="300">
+        <source media="(min-width: 768px)" srcset="img/window-tablet.png 1x, img/window-tablet@2x.jpg 2x" height="300"
+                width="300">
+        <img alt="Окна" class="user-review__photo" src="img/window.jpg" srcset="img/window@2x.jpg" width="280" height="180">
+      </picture>
       <div class="user-review__information">
         <blockquote class="user-review__quote">
           <cite class="user-review__author-name">Борис<span class="user-review__time">(20 часов назад)</span></cite>
           <p class="user-review__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <div class="user-review__likes-section">
-            <div class="user-review__likes-icon"></div>
-            <p class="user-review__likes">Нравится: 215</p>
-          </div>
+          <p class="user-review__likes">Нравится: 215</p>
         </blockquote>
       </div>
     </li>
     <li class="user-review__item user-review__item--fair">
-      <img src="img/fair.jpg" alt="Ярмарка" class="user-review__photo" width="280" height="180">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/fair-desktop.png 1x, img/fair-desktop@2x.jpg 2x" height="400"
+                width="300">
+        <source media="(min-width: 768px)" srcset="img/fair-tablet.png 1x, img/fair-tablet@2x.jpg 2x" height="300"
+                width="300">
+        <img alt="Ярмарка" class="user-review__photo" src="img/fair.jpg" srcset="img/fair@2x.jpg" width="280" height="180">
+      </picture>
       <div class="user-review__information">
         <blockquote class="user-review__quote">
           <cite class="user-review__author-name">Сергей<span class="user-review__time">(25 часов назад)</span></cite>
           <p class="user-review__text">Самая кубанская в мире!!</p>
-          <div class="user-review__likes-section">
-            <div class="user-review__likes-icon"></div>
-            <p class="user-review__likes">Нравится: 4</p>
-          </div>
+          <p class="user-review__likes">Нравится: 4</p>
         </blockquote>
       </div>
     </li>
     <li class="user-review__item user-review__item--mountains">
-      <img src="img/mountains.jpg" alt="Горы" class="user-review__photo" width="280" height="180">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/mountains-desktop.png 1x, img/mountains-desktop@2x.jpg 2x"
+                height="400" width="300">
+        <source media="(min-width: 768px)" srcset="img/mountains-tablet.png 1x, img/mountains-tablet@2x.jpg 2x"
+                height="300" width="300">
+        <img alt="Горы" class="user-review__photo" src="img/mountains.jpg" srcset=" img/mountains@2x.jpg" width="280" height="180">
+      </picture>
       <div class="user-review__information">
         <blockquote class="user-review__quote">
           <cite class="user-review__author-name">Максим<span class="user-review__time">(40 часов назад)</span></cite>
           <p class="user-review__text">Где снег-то?</p>
-          <div class="user-review__likes-section">
-            <div class="user-review__likes-icon"></div>
-            <p class="user-review__likes">Нравится: 150</p>
-          </div>
+          <p class="user-review__likes">Нравится: 150</p>
         </blockquote>
       </div>
     </li>
     <li class="user-review__item user-review__item--plane">
-      <img src="img/plane.jpg" alt="Самолет" class="user-review__photo" width="280" height="180">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/plane-desktop.png 1x, img/plane-desktop@2x.jpg 2x" height="400"
+                width="300">
+        <source media="(min-width: 768px)" srcset="img/plane-tablet.png 1x, img/plane-tablet@2x.jpg 2x" height="300"
+                width="300">
+        <img alt="Самолет" class="user-review__photo" src="img/plane.jpg" srcset="img/plane@2x.jpg" width="280" height="180">
+      </picture>
       <div class="user-review__information">
         <blockquote class="user-review__quote">
           <cite class="user-review__author-name">Надежда<span class="user-review__time">(45 часов назад)</span></cite>
           <p class="user-review__text">Всем GM и взаимные лайки!</p>
-          <div class="user-review__likes-section">
-            <div class="user-review__likes-icon"></div>
-            <p class="user-review__likes">Нравится: 2560</p>
-          </div>
+          <p class="user-review__likes">Нравится: 2560</p>
         </blockquote>
       </div>
     </li>
@@ -141,7 +171,13 @@
   <p class="user-review__slogan">Затмите их всех!
     Выкладывайте все, что накопилось в телефоне!</p>
   <div class="photo-processing">
-    <img src="img/winter.jpg" alt="Зимний пейзаж" class="photo-processing__image" width="280" height="374">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/winter-desktop.jpg 1x, img/winter-desktop@2x.jpg 2x" height="400"
+              width="300">
+      <source media="(min-width: 768px)" srcset="img/winter-tablet.jpg 1x, img/winter-tablet@2x.jpg 2x" height="400"
+              width="300">
+      <img alt="Зимний пейзаж" class="photo-processing__image" src="img/winter.jpg" srcset="img/winter@2x.jpg" width="280" height="374">
+    </picture>
     <div class="photo-processing__settings">
       <ul class="photo-processing__functions">
         <li class="photo-processing__option photo-processing__option--current">

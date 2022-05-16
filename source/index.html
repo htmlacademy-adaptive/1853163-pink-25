@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon16.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicons/favicon152.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="body">
 <header class="page-header body__page-header">
   <div class="page-header__wrapper">
-    <a class="page-header__logo"></a>
+    <a class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" height="40" width="147">
+        <source media="(min-width: 768px)" srcset="img/logo.svg" height="40" width="145">
+        <img src="img/logo-mobile.svg" width="74" height="23" alt="Приложение «Pink»»">
+      </picture>
+    </a>
     <nav class="main-menu main-menu--closed main-menu--nojs">
       <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-menu__list">
@@ -40,7 +50,7 @@
     <h1 class="visually-hidden">Приложение Pink</h1>
     <div class="main-container__headline-image">
       <p class="main-container__headline main-container__headline--index">Взгляните на жизнь иначе!</p>
-      <img src="img/filter.svg" alt="Фильтр приложения" class="main-container__image" height="268">
+      <img src="img/filter.svg" srcset="img/filter@2x.svg 2x" alt="Фильтр приложения" class="main-container__image" height="268">
     </div>
     <section class="download-container">
       <div class="download-container__content">
@@ -96,13 +106,13 @@
       </ul>
       <ul class="advantage-image__list">
         <li class="advantage-image__item advantage-image__item--hidden">
-          <img src="img/index-filter3.png" alt="Фильтр приложения" class="advantage-image__icon">
+          <img src="img/index-filter3.png" srcset="img/index-filter3@2x.png 2x" alt="Фильтр приложения" class="advantage-image__icon">
         </li>
         <li class="advantage-image__item advantage-image__item--hidden">
-          <img src="img/index-filter1.png" alt="Фильтр приложения" class="advantage-image__icon">
+          <img src="img/index-filter1.png" srcset="img/index-filter1@2x.png 2x" alt="Фильтр приложения" class="advantage-image__icon">
         </li>
         <li class="advantage-image__item">
-          <img src="img/index-filter2.png" alt="Фильтр приложения" class="advantage-image__icon">
+          <img src="img/index-filter2.png" srcset="img/index-filter2@2x.png 2x" alt="Фильтр приложения" class="advantage-image__icon">
         </li>
       </ul>
     </div>
