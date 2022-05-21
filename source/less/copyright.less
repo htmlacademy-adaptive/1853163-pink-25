@@ -3,15 +3,44 @@
   width: 130px;
   justify-content: space-between;
   align-items: center;
+  margin-top: 32px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 26px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 30px;
+    width: 154px;
+  }
 }
 
 .copyright__link {
   text-decoration: none;
 }
 
-.copyright-text {
-  font-size: 14px;
-  line-height: 18px;
+.copyright__text {
+  font-size: 13px;
+  margin: 0 0 6px;
   align-items: center;
   color: #283645;
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+    margin-right: 13px;
+  }
+}
+
+.copyright__link-icon path {
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
 }

@@ -5,8 +5,30 @@
   display: flex;
   width: 180px;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 21px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .social__link {
   text-decoration: none;
+}
+
+.social__link-icon {
+  &:hover {
+    circle {
+      stroke: #283645;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

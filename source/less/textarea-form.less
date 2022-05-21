@@ -1,4 +1,7 @@
 .textarea-form {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
   grid-area: textarea;
   order: 4;
   border-radius: 1px;
@@ -7,7 +10,13 @@
   @media (min-width: @tablet-width) {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
-    padding: 47px 60px 53px;
+    padding: 15px 60px 46px;
+    margin-top: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 13px 58px 39px;
+    margin-top: 36px;
   }
 }
 
@@ -17,16 +26,35 @@
   color: #d22856;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 32px;
+  padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 16px;
+    padding-bottom: 11px;
+  }
 }
 
 .textarea-form__text {
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   width: 100%;
-  padding-top: 20px;
+  box-sizing: border-box;
+  padding-top: 13px;
   padding-left: 20px;
   padding-right: 20px;
   color: #283645;
   font-size: 18px;
   line-height: 30px;
+  font-family: inherit;
+  height: 201px;
+
+  @media (min-width: @tablet-width) {
+    height: 192px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: auto;
+    padding-bottom: 23px;
+  }
 }

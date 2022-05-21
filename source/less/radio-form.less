@@ -1,25 +1,41 @@
 .radio-form {
+  margin: 0;
   grid-area: radio;
   order: 3;
   background-color: #f2f2f2;
   border: none;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 38px;
+  padding-bottom: 45px;
 
   @media (min-width: @tablet-width) {
     order: 1;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     background-color: #ffffff;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 1px;
+    padding-left: 22px;
+    padding-right: 28px;
+    margin-bottom: 58px;
   }
 }
 
 .radio-form__legend {
+  float: left;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 18px;
   color: #d22856;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    float: none;
+    padding-bottom: 0;
+  }
 }
 
 .radio-form__input {
@@ -38,14 +54,19 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
-  margin-left: 42px;
-  margin-bottom: 38px;
   position: relative;
   display: block;
-  padding-left: 36px;
+  padding-left: 10px;
+  margin-top: 22px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 22px;
+    margin-left: 31px;
+    margin-top: 10px;
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 27px;
   }
 
   &:last-child {
@@ -67,6 +88,11 @@
 
   &:active {
     border: 2px solid #d22856;
+  }
+
+  @media (min-width: @tablet-width) {
+    bottom: -6px;
+    left: 18px;
   }
 }
 

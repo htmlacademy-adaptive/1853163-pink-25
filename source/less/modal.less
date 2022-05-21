@@ -1,0 +1,146 @@
+.modal {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+  }
+}
+
+.modal__info--error {
+  padding: 44px 61px 50px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 49px 65px 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 49px 214px 68px;
+  }
+}
+
+.modal__title {
+  margin: 0 0 37px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal__text {
+  width: 266px;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.modal__submit-wrapper {
+  padding: 48px 20px 50px;
+  background-color: #f2f2f2;
+}
+
+.modal__submit {
+  padding: 25px 0;
+  border: none;
+  background-color: #2aab6d;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.modal__submit--error {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 296px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 296px;
+  }
+}
+
+.modal__submit--error-wrapper {
+  padding: 0 22px 52px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 75px 57px 89px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 242px;
+    background: #f2f2f2;
+  }
+}
+
+.modal__submit--success {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 295px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 456px;
+  }
+}
+
+.modal__submit--success-wrapper {
+  padding: 52px 22px;
+  background: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    padding: 52px 82px 52px 83px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 162px;
+  }
+}
+
+.modal__info--success {
+  text-align: center;
+  padding: 44px 27px 41px;
+
+  @media (min-width: @tablet-width) {
+    padding: 49px 41px 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 49px 192px 44px;
+  }
+}
+
+.modal__break {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
