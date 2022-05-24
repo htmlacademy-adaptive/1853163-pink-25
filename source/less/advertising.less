@@ -1,11 +1,40 @@
 .advertising {
-  padding: 46px 20px 70px;
+  padding: 42px 20px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 20px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 67px 20px 22px;
+  }
 }
 
 .advertising__slogan {
+  margin: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   color: #283645;
   text-align: center;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+  }
+}
+
+.advertising__slogan--offer {
+  margin-top: 7px;
+  line-height: 120%;
+
+  @media (min-width: @tablet-width) {
+    line-height: 130%;
+    margin-bottom: 32px;
+  }
 }

@@ -5,13 +5,13 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    padding-left: 22px;
+    padding-left: 18px;
     padding-right: 22px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 132px;
-    padding-right: 132px;
+    padding-left: 131px;
+    padding-right: 130px;
   }
 }
 
@@ -23,7 +23,6 @@
   @media (min-width: @desktop-width) {
     display: grid;
     column-gap: 75px;
-    row-gap: 70px;
     grid-template-areas:
       "registration radio"
       "text text"
@@ -41,6 +40,8 @@
   text-transform: uppercase;
   color: #ffffff;
   width: 275px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     width: 295px;
@@ -70,17 +71,70 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 35px;
+  margin-left: 47px;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 26px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 27px;
+    margin-right: 2px;
+    margin-bottom: 18px;
+  }
 }
 
 .form__submit {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 52px;
+  box-sizing: border-box;
+  margin-top: 42px;
+  padding-left: 20px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 60px;
+    padding-left: 3px;
+    margin-bottom: 40px;
+  }
+}
+
+.form__registration {
+  margin: 0;
+}
+
+.form__requested-sign {
+  color: #d22856;
+}
+
+.form__text {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 53px;
+    margin-bottom: 39px;
+  }
+}
+
+.form__textarea {
+  @media (min-width: @tablet-width) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 37px;
+  }
+}
+
+.form__desktop-text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }

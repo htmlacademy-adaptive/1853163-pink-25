@@ -4,34 +4,55 @@
   border: none;
   font-size: 18px;
   line-height: 30px;
-  padding: 42px 22px 14px;
+  padding: 30px 22px 27px;
 
   @media (min-width: @tablet-width) {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    padding: 4px 22px 27px;
+    margin-top: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    padding: 0 22px 13px;
   }
 }
 
 .text-form__section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .text-form__label {
   order: 0;
   color: #d22856;
   text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 21px;
+  margin-bottom: 6px;
 
   @media (min-width: @tablet-width) {
     order: 1;
-    margin-top: 20px;
+    margin-top: 7px;
+    margin-left: 57px;
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 18px;
+    margin-top: 9px;
   }
 }
 
 .text-form__input {
   color: #283645;
-  padding: 13px 244px 13px 20px;
+  padding: 13px 253px 14px 21px;
   order: 1;
   font-size: 18px;
   line-height: 30px;
@@ -42,12 +63,17 @@
 
   @media (min-width: @tablet-width) {
     order: 0;
-    padding: 13px 244px 13px 20px;
+    padding: 13px 244px 16px 21px;
+    margin-left: 39px;
+    font-family: inherit;
+    width: 87%;
   }
 
   @media (min-width: @desktop-width) {
     order: 0;
-    padding: 13px 119px 13px 20px;
+    padding: 16px 119px 14px 20px;
+    margin-left: 0;
+    width: 371px;
   }
 
   &:hover {
@@ -66,20 +92,25 @@
 }
 
 .text-form__phone-section::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/phone-icon.svg");
-  background-position: center;
-  background-color: #e5e5e5;
-  width: 60px;
-  height: 60px;
-  display: block;
-  top: 0;
-  right: 0;
-  background-repeat: no-repeat;
+  display: none;
 
-  @media (max-width: @tablet-width) {
-    display: none;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/phone-icon.svg");
+    background-position: center;
+    background-color: #e5e5e5;
+    width: 60px;
+    height: 60px;
+    display: block;
+    top: 0;
+    right: 34px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 2px;
+    right: 0;
   }
 }
 
@@ -95,14 +126,15 @@
 
 
 .text-form__legend {
-  font-size: 14px;
-  line-height: 30px;
-  color: #d22856;
-  text-align: center;
-  text-transform: uppercase;
+  display: none;
 
-  @media (max-width: @tablet-width) {
-    display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+    font-size: 14px;
+    line-height: 23px;
+    color: #d22856;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
@@ -111,19 +143,31 @@
 }
 
 .text-form__mail-section::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/mail-icon.svg");
-  background-position: center;
-  background-color: #e5e5e5;
-  width: 60px;
-  height: 60px;
-  display: block;
-  top: 0;
-  right: 0;
-  background-repeat: no-repeat;
+  display: none;
 
-  @media (max-width: @tablet-width) {
-    display: none;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/mail-icon.svg");
+    background-position: center;
+    background-color: #e5e5e5;
+    width: 60px;
+    height: 60px;
+    display: block;
+    top: 2px;
+    right: 35px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 0;
+  }
+}
+
+.text-form__break-mobile {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }

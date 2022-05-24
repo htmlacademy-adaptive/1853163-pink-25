@@ -2,37 +2,60 @@
   grid-area: registration;
   border: none;
   order: 0;
-  padding-left: 22px;
+  padding-left: 20px;
   padding-right: 22px;
   padding-top: 15px;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 68px 0 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 14px 0 3px 0;
+  }
 }
 
 .registration-form__label {
   color: #d22856;
+  font-size: 14px;
+  margin-left: 22px;
+  margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-top: 19px;
+  }
+}
+
+.registration-form__section {
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    margin-bottom: 35px;
   }
 }
 
 .registration-form__input {
   border: 2px solid #e5e5e5;
   border-radius: 1px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-left: 20px;
-  font-size: 18px;
+  padding: 16px 56px 13px 19px;
+  font-size: 19px;
   line-height: 30px;
   color: #283645;
-  margin-bottom: 50px;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
     margin-left: 20px;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 63px;
   }
 
   &:hover {

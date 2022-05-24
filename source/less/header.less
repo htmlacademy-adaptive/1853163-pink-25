@@ -1,33 +1,20 @@
 .page-header {
+  height: 66px;
+  box-sizing: border-box;
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
-  padding: 22px 0 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+  }
 }
 
 .page-header__color-grey {
   background: #283645;
-}
-
-.page-header__logo {
-  display: block;
-  width: 74px;
-  height: 23px;
-  margin: 0 auto 20px 20px;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    height: 40px;
-    width: 145px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    height: 40px;
-    width: 147px;
-  }
 }
 
 .page-header__wrapper {
@@ -38,5 +25,55 @@
     justify-content: space-between;
     padding-left: 130px;
     padding-right: 130px;
+  }
+}
+
+.page-header__logo {
+  height: 23px;
+  display: inline-block;
+  padding: 22px 20px 21px;
+
+  @media (min-width: @tablet-width) {
+    height: 40px;
+    display: inline-block;
+    padding: 27px 20px 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 23px 0 43px;
+  }
+}
+
+.page-header__pink-logo {
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+}
+
+.page-header__pink-logo--visible-phone {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__pink-logo--visible-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__pink-logo--visible-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }

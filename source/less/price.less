@@ -1,21 +1,21 @@
 .price {
   background: #f2f2f2;
-  padding: 81px 0 100px;
+  padding: 101px 0 46px;
   position: relative;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
-    padding: 81px 20px 100px;
+    padding: 80px 21px 68px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 81px 130px 100px;
+    padding: 81px 130px 90px;
   }
 }
 
 .price::before {
   content: "";
-  height: 33px;
+  height: 22px;
   top: 0;
   left: 0;
   width: 100%;
@@ -23,23 +23,29 @@
   z-index: 0;
   clip-path: polygon(0 100%, 0 0, 100% 0);
   background-color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    height: 89px;
+  }
 }
 
 .price__toggle-list {
-  margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 44px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 55px;
+  margin: 28px auto 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .price__toggle-button {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   margin: 0;
   padding: 0;
   background: #283645;
@@ -59,7 +65,8 @@
   opacity: 0.1;
 }
 
-.price__toggle-button-current {
+.price__toggle-button--current {
   background: #ffffff;
-  border: 3px solid #283645;
+  outline: 3px solid #283645;
+  opacity: 1;
 }

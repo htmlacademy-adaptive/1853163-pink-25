@@ -1,8 +1,12 @@
 .contacts__wrapper {
-  padding: 50px 49px 41px;
+  padding: 16px 40px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 45px 0 0;
+  }
 
   @media (min-width: @desktop-width) {
-    padding: 47px 49px 41px 67px;
+    padding: 66px 67px 0 67px;
   }
 }
 
@@ -12,8 +16,10 @@
   line-height: 120%;
   text-align: center;
   color: #283645;
+  margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     font-size: 40px;
     line-height: 54px;
   }
@@ -45,10 +51,23 @@
 .contacts__item {
   list-style: none;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 17px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 55px;
+    margin-top: 33px;
+  }
+
+  &:first-child {
+    padding: 0 0 0 18px;
+  }
+
+  &:last-child {
+    margin-top: 3px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 29px;
+      width: 266px;
+    }
   }
 }
 
@@ -60,11 +79,13 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin: 6px 59px 0 59px;
   }
 }
 
@@ -75,16 +96,17 @@
   height: 200px;
 
   @media (min-width: @tablet-width) {
-    height: 375px;
+    height: 381px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     height: 505px;
   }
 }
 
 .contacts__map {
   position: relative;
+  margin-top: 20px;
 
   &::before {
     background-color: #ffffff;
@@ -92,17 +114,26 @@
     width: 100%;
     height: 33px;
     position: absolute;
-    top: -1px;
+    top: 0;
     left: 0;
     clip-path: polygon(100% 0, 50% 100%, 0 0);
   }
 
   @media (min-width: @tablet-width) {
-    height: 68px;
+    height: 371px;
+    margin-top: 0;
+
+    &::before {
+      height: 78px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    height: 95px;
+    height: 505px;
+
+    &::before {
+      height: 100px;
+    }
   }
 }
 
@@ -122,5 +153,38 @@
   &:active {
     color: #283645;
     opacity: 0.3;
+  }
+}
+
+.contacts__item--phone {
+  order: 1;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 0 21px;
+  }
+}
+
+.contacts__item--mail {
+  order: 2;
+
+  @media (min-width: @desktop-width) {
+    order: 3;
+  }
+}
+
+.contacts__item--address {
+  order: 3;
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    padding-left: 17px;
+    padding-top: 3px;
+  }
+}
+
+.contacts__link {
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: 21px;
   }
 }

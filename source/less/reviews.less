@@ -1,6 +1,14 @@
 .reviews {
-  padding: 50px 20px 60px;
+  padding: 40px 20px 33px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 28px 20px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 73px;
+  }
 }
 
 .reviews__author-name {
@@ -9,6 +17,14 @@
   line-height: 30px;
   text-align: center;
   font-style: normal;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .reviews__text {
@@ -20,11 +36,13 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 11px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     order: 0;
     width: 620px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,19 +52,25 @@
 
 .reviews__item {
   text-align: center;
-  margin-bottom: 50px;
+  margin: 0 0 7px;
   display: flex;
   flex-direction: column;
 }
 
 .reviews__author-name--description {
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  color: #283645;
+  display: none;
 
-  @media (max-width: @tablet-width) {
-    display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    color: #283645;
+    font-size: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 34px;
+    font-size: 18px;
   }
 }
 
@@ -90,15 +114,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .reviews__toggle {
-  margin: 0 4px;
+  margin: 0 9px;
 }
 
 .reviews__toggle-button {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   margin: 0;
   padding: 0;
   background: #283645;
@@ -120,7 +152,8 @@
 
 .reviews__toggle-button--current {
   background: #ffffff;
-  border: 3px solid #283645;
+  outline: 3px solid #283645;
+  opacity: 1;
 }
 
 .reviews__wrapper {
@@ -128,28 +161,28 @@
 }
 
 .reviews__buttons {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
+  display: none;
 
-  @media (max-width: @desktop-width) {
-    display: none;
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 971px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .reviews::before {
-  content: "";
-  background-image: url("../img/quotes.svg");
-  width: 80px;
-  height: 65px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: none;
 
-  @media (max-width: @desktop-width) {
-    display: none;
+  @media (min-width: @desktop-width) {
+    content: "";
+    background-image: url("../img/quotes.svg");
+    width: 80px;
+    height: 65px;
+    display: block;
+    margin: 0 auto 35px;
   }
 }
