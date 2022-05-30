@@ -10,11 +10,7 @@
     display: grid;
     row-gap: 1px;
     grid-template-columns: 20px auto 20px auto 20px;
-    grid-template-areas:
-      "panorama panorama panorama panorama panorama"
-      ". car . drum ."
-      ". window . fair ."
-      ". mountains . plane .";
+    grid-template-areas: "panorama panorama panorama panorama panorama" ". car . drum ." ". window . fair ." ". mountains . plane .";
   }
 
   @media (min-width: @desktop-width) {
@@ -22,10 +18,7 @@
     row-gap: 0;
     padding-bottom: 0;
     grid-template-columns: 130px auto 20px auto 20px auto 130px;
-    grid-template-areas:
-      "panorama panorama panorama panorama panorama panorama panorama"
-      ". car . drum . window ."
-      ". fair . mountains . plane .";
+    grid-template-areas: "panorama panorama panorama panorama panorama panorama panorama" ". car . drum . window ." ". fair . mountains . plane .";
   }
 }
 
@@ -176,45 +169,6 @@
     padding-left: 0;
     margin-top: 3px;
   }
-
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/like.svg");
-    background-repeat: no-repeat;
-    width: 13px;
-    height: 12px;
-    top: 5px;
-    left: 2px;
-
-    @media (min-width: @tablet-width) {
-      top: 6px;
-      left: 225px;
-    }
-
-    @media (min-width: @desktop-width) {
-      left: 229px;
-    }
-  }
-}
-
-.user-review__slogan {
-  font-size: 14px;
-  line-height: 29px;
-  text-align: center;
-  color: #283645;
-  margin-bottom: 43px;
-  margin-top: 0;
-
-  @media (min-width: @tablet-width) {
-    font-size: 18px;
-    margin-bottom: 69px;
-    margin-top: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 6px;
-  }
 }
 
 .user-review__photo {
@@ -241,9 +195,7 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-areas:
-      "author likes"
-      "text text";
+    grid-template-areas: "author likes" "text text";
     column-gap: 170px;
     padding-bottom: 25px;
     padding-left: 29px;
@@ -278,28 +230,35 @@
 }
 
 .user-review__likes-icon {
-  background-image: url("../img/like.svg");
-  background-repeat: no-repeat;
-  width: 13px;
-  height: 12px;
-  margin-right: 18px;
-
-  @media (min-width: @tablet-width) {
-    order: 1;
-    margin-left: auto;
-  }
-}
-
-.user-review__likes--panorama::before {
   position: absolute;
-  content: "";
-  background-image: url("../img/like.svg");
-  background-repeat: no-repeat;
   width: 13px;
   height: 12px;
   top: 5px;
-  right: 250px;
+  left: 2px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 
+  &:hover path {
+    fill: #ff0000;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 6px;
+    left: 225px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 229px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  right: 0;
+  left: auto;
+}
+
+.user-review__likes-icon--panorama {
   @media (min-width: @tablet-width) {
     right: 0;
     left: auto;
@@ -313,7 +272,7 @@
 }
 
 .user-review__likes--drum {
-  margin-top: 11px;
+  margin-top: 13px;
 
   @media (min-width: @tablet-width) {
     margin-top: 35px;
@@ -356,5 +315,11 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     margin-top: 35px;
+  }
+}
+
+.user-review__mobile-break {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

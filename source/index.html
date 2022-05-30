@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon16.svg" type="image/svg+xml">
   <link rel="icon" href="img/favicons/favicon152.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="body">
-<header class="page-header body__page-header">
+<header class="page-header page-header--nojs body__page-header body__page-header--nojs">
   <div class="page-header__wrapper">
     <a href="index.html" class="page-header__logo">
       <svg class="page-header__pink-logo page-header__pink-logo--visible-phone" width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg">
@@ -62,10 +68,10 @@
           fill="#D22856"></path>
       </svg>
     </a>
-    <nav class="main-menu main-menu--opened main-menu--nojs">
+    <nav class="main-menu main-menu--nojs">
       <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-menu__list">
-        <li class="main-menu__item">
+        <li class="main-menu__item main-menu__item--current">
           <span class="main-menu__item-content">Главная</span>
         </li>
         <li class="main-menu__item">
@@ -93,27 +99,27 @@
     <div class="main-container__headline-image">
       <p class="main-container__headline main-container__headline--index">Взгляните на жизнь иначе!</p>
       <picture>
-        <source media="(min-width: 660px)" srcset="img/filter-tablet.png 1x" height="400" width="300">
+        <source media="(min-width: 660px)" srcset="img/filter-tablet.png 1x, img/filter-tablet@2x.png 2x" height="400" width="300">
         <img src="img/filter.png" srcset="img/filter@2x.png 2x" alt="Фильтр приложения" class="main-container__image" width="320">
       </picture>
     </div>
-    <section class="download-container">
+    <div class="download-container">
       <div class="download-container__content">
-        <button class="download-container__button" type="button">Скачать приложение</button>
+        <a href="https://www.apple.com/app-store/" class="download-container__link">Скачать приложение</a>
         <div class="operating-systems">
           <ul class="operating-systems__list">
             <li class="operating-systems__item">
-              <a href="#" class="operating-systems__link">
+              <a href="https://www.apple.com/app-store/" class="operating-systems__link">
                 <img src="img/apple.svg" class="operating-systems__icon" alt="Операционая система IOS" width="47" height="56">
               </a>
             </li>
             <li class="operating-systems__item">
-              <a href="#" class="operating-system__link">
+              <a href="https://play.google.com/store/games?hl=ru" class="operating-systems__link">
                 <img src="img/android.svg" class="operating-systems__icon" alt="Операционая система Android" width="43" height="47">
               </a>
             </li>
             <li class="operating-systems__item">
-              <a href="#" class="operating-systems__link">
+              <a href="https://play-market-windows.ru/" class="operating-systems__link">
                 <img src="img/windows.svg" class="operating-systems__icon" alt="Операционая система Windows" width="44" height="41">
               </a>
             </li>
@@ -123,7 +129,7 @@
           </p>
         </div>
       </div>
-    </section>
+    </div>
   </div>
   <div class="advertising">
     <p class="advertising__slogan advertising__slogan--question">Устали от серости мегаполиса?</p>
@@ -141,8 +147,7 @@
         <li class="advantages__item advantages__item--type-world">
           <h3 class="advantages__title">Меняет мир вокруг</h3>
           <p class="advantages__description"> Сделайте снимок и <br class="advantages__break"> украсьте его смайликом<br
-            class="advantages__break"> или текстовой подписью,<br class="advantages__break"> чтобы
-            усилить эффект</p>
+            class="advantages__break"> или текстовой подписью,<br class="advantages__break"> чтобы<br class="advantage__tablet-break"> усилить эффект</p>
         </li>
         <li class="advantages__item advantages__item--type-friends">
           <h3 class="advantages__title">Заводит новых друзей</h3>
@@ -151,21 +156,21 @@
             новых</p>
         </li>
       </ul>
-      <ul class="advantage-image__list">
-        <li class="advantage-image__item advantage-image__item--hidden">
-          <img src="img/index-filter3.png" srcset="img/index-filter3@2x.png 2x" alt="Фильтр приложения" class="advantage-image__icon">
+      <ul class="advantages__image-list">
+        <li class="advantages__image-item advantages__image-item--hidden">
+          <img src="img/index-filter3.png" srcset="img/index-filter3@2x.png 2x" alt="Фильтр приложения" class="advantages__image-icon">
         </li>
-        <li class="advantage-image__item advantage-image__item--hidden">
-          <img src="img/index-filter1.png" srcset="img/index-filter1@2x.png 2x" alt="Фильтр приложения" class="advantage-image__icon">
+        <li class="advantages__image-item advantages__image-item--hidden">
+          <img src="img/index-filter1.png" srcset="img/index-filter1@2x.png 2x" alt="Фильтр приложения" class="advantages__image-icon">
         </li>
-        <li class="advantage-image__item">
-          <img src="img/index-filter2.png" srcset="img/index-filter2@2x.png 2x" alt="Фильтр приложения" class="advantage-image__icon">
+        <li class="advantages__image-item">
+          <img src="img/index-filter2.png" srcset="img/index-filter2@2x.png 2x" alt="Фильтр приложения" class="advantages__image-icon">
         </li>
       </ul>
     </div>
   </section>
   <div class="time-effect">
-    <img src="img/effect.png" class="time-effect__image">
+    <img src="img/effect.png" class="time-effect__image" alt="Эффект на 24 часа">
     <div class="time-effect__information">
       <h1 class="time-effect__headline">Эффект <br class="time-effect__break"> на 24 часа!</h1>
       <p class="time-effect__description">Британские ученые провели исследования <br class="time-effect__break"> и
@@ -182,7 +187,7 @@
         <blockquote class="reviews__item">
           <div class="reviews__author">
             <cite class="reviews__author-name">Николай Петров</cite><br>
-            <span class="reviews__author-name--description">25 лет, водитель трамвая</span>
+            <span class="reviews__author-description">25 лет, водитель трамвая</span>
           </div>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -327,7 +332,7 @@
       </li>
     </ul>
   </section>
-  <section class="contacts">
+  <div class="contacts">
     <div class="contacts__wrapper">
       <p class="contacts__description">Остались вопросы?<br>
         Свяжитесь с нами!</p>
@@ -356,7 +361,7 @@
               title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
       </iframe>
     </div>
-  </section>
+  </div>
 </main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
@@ -370,6 +375,7 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
             <svg width="54" height="54" fill="none" xmlns="http://www.w3.org/2000/svg" class="social__link-icon">
               <circle class="ring" r="25" cx="28" cy="28" stroke-width="2" stroke="#283645" opacity="0.3"
                       fill="none"></circle>
@@ -388,6 +394,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в телеграме</span>
             <svg width="54" height="54" fill="none" xmlns="http://www.w3.org/2000/svg" class="social__link-icon">
               <circle class="ring" r="25" cx="28" cy="28" stroke-width="2" stroke="#283645" opacity="0.3"
                       fill="none"></circle>
@@ -399,6 +406,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Ютуб</span>
             <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg" class="social__link-icon">
               <circle class="ring" r="25" cx="28" cy="28" stroke-width="2" stroke="#283645" opacity="0.3"
                       fill="none"></circle>

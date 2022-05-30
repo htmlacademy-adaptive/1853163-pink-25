@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon16.svg" type="image/svg+xml">
   <link rel="icon" href="img/favicons/favicon152.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="body">
-<header class="page-header body__page-header">
+<header class="page-header page-header--nojs body__page-header body__page-header--nojs">
   <div class="page-header__wrapper">
     <a href="index.html" class="page-header__logo">
       <svg class="page-header__pink-logo page-header__pink-logo--visible-phone" width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +68,7 @@
           fill="#D22856"></path>
       </svg>
     </a>
-    <nav class="main-menu main-menu--opened main-menu--nojs">
+    <nav class="main-menu main-menu--nojs">
       <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-menu__list">
         <li class="main-menu__item">
@@ -118,27 +124,27 @@
             <label class="checkbox-form__label"><input type="checkbox" name="achievement" class="checkbox-form__input visually-hidden" checked>
               <span class="checkbox-form__mark"></span>
               <span class="checkbox-form__label-name">Сделал селфи с акулой</span>
-            </label><br>
+            </label>
             <label class="checkbox-form__label"><input type="checkbox" name="achievement" class="checkbox-form__input visually-hidden" checked>
               <span class="checkbox-form__mark"></span>
               <span class="checkbox-form__label-name">Обгорел на пляже</span>
-            </label><br>
+            </label>
           </div>
           <div class="checkbox-form__column">
             <label class="checkbox-form__label"><input type="checkbox" name="achievement" class="checkbox-form__input visually-hidden">
               <span class="checkbox-form__mark"></span>
               <span class="checkbox-form__label-name">Видел Чака Норриса</span>
-            </label><br>
+            </label>
             <label class="checkbox-form__label"><input type="checkbox" name="achievement" class="checkbox-form__input visually-hidden">
               <span class="checkbox-form__mark"></span>
               <span class="checkbox-form__label-name">Накупил сувениров</span>
-            </label><br>
+            </label>
           </div>
           <div class="checkbox-form__column">
             <label class="checkbox-form__label"><input type="checkbox" name="achievement" class="checkbox-form__input visually-hidden" checked>
               <span class="checkbox-form__mark"></span>
               <span class="checkbox-form__label-name">Удержал башню</span>
-            </label><br>
+            </label>
             <label class="checkbox-form__label"><input type="checkbox" name="achievement" class="checkbox-form__input visually-hidden">
               <span class="checkbox-form__mark"></span>
               <span class="checkbox-form__label-name">Разгромил отель</span>
@@ -150,13 +156,13 @@
         <legend class="text-form__legend">контактная информация</legend>
         <div class="text-form__labels">
           <div class="text-form__section">
-            <label class="text-form__label">номер телефона</label><br class="text-form__break-mobile">
+            <label class="text-form__label">номер телефона</label>
             <div class="text-form__phone-section">
               <input type="text" name="login" class="text-form__input" placeholder="Номер, пожалуйста">
             </div>
           </div>
           <div class="text-form__section">
-            <label class="text-form__label">адрес почты</label><br class="text-form__break-mobile">
+            <label class="text-form__label">адрес почты</label>
             <div class="text-form__mail-section">
               <input type="text" name="login" class="text-form__input" placeholder="Введите почту *"><br>
             </div>
@@ -169,11 +175,11 @@
                                                 checked>
           <span class="radio-form__mark"></span>
           <span class="radio-form__label-name">Pink для iOS</span>
-        </label><br>
+        </label>
         <label class="radio-form__label"><input type="radio" name="app" class="radio-form__input visually-hidden">
           <span class="radio-form__mark"></span>
           <span class="radio-form__label-name">Pink на Android</span>
-        </label><br>
+        </label>
         <label class="radio-form__label"><input type="radio" name="app" class="radio-form__input visually-hidden">
           <span class="radio-form__mark"></span>
           <span class="radio-form__label-name">Windows Phone</span>
@@ -181,8 +187,7 @@
       </fieldset>
       <fieldset class="textarea-form form__textarea">
         <legend class="textarea-form__legend">ОПИШИТЕ СВОИ ЭМОЦИИ<br></legend>
-        <textarea name="comment" id="comment-field" class="textarea-form__text" rows="3">Можно прям в красках, не
-стесняясь в выражениях</textarea>
+        <textarea name="comment" id="comment-field" class="textarea-form__text" rows="3">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
     </div>
     <div class="form__submit">
@@ -243,7 +248,6 @@
                 d="M21.8336 33.8089C21.6463 33.9278 21.4247 33.9941 21.1963 33.9996C20.9678 34.0051 20.7426 33.9495 20.5487 33.8398C20.3548 33.7301 20.2007 33.571 20.1056 33.3824C20.0106 33.1938 19.9787 32.984 20.014 32.779V22.221C19.9787 22.016 20.0106 21.8062 20.1056 21.6176C20.2007 21.429 20.3548 21.2699 20.5487 21.1602C20.7426 21.0505 20.9678 20.9949 21.1963 21.0004C21.4247 21.0059 21.6463 21.0722 21.8336 21.1911L34.2333 26.6928C35.2556 27.1382 35.2556 27.8618 34.2333 28.3072L21.8336 33.8089Z"
                 fill="#D22856"/>
             </svg>
-
           </a>
         </li>
       </ul>
@@ -270,7 +274,7 @@
       ее и<br/> оповестим вас.
     </p>
   </div>
-  <div class="modal__submit--success-wrapper">
+  <div class="modal__success-wrapper">
     <button class="modal__submit modal__submit--success">Закрыть окно</button>
   </div>
 </div>
@@ -282,7 +286,7 @@
       скорее всего вы забыли их заполнить
     </p>
   </div>
-  <div class="modal__submit--error-wrapper">
+  <div class="modal__error-wrapper">
     <button class="modal__submit modal__submit--error">ОК</button>
   </div>
 </div>
