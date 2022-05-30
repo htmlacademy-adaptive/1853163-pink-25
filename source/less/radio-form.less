@@ -76,6 +76,11 @@
   }
 }
 
+.radio-form__input:focus ~ .radio-form__mark {
+  border: 2px solid #d22856;
+  border-radius: 1px;
+}
+
 .radio-form__mark {
   position: absolute;
   width: 37px;
@@ -90,11 +95,6 @@
 
   &:active {
     border: 2px solid #d22856;
-  }
-
-  &:focus {
-    border: 2px solid #d22856;
-    border-radius: 1px;
   }
 
   @media (min-width: @tablet-width) {
