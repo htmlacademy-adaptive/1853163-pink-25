@@ -5,14 +5,14 @@
   background-color: #f2f2f2;
   border: none;
   padding-top: 38px;
-  padding-bottom: 45px;
+  padding-bottom: 18px;
 
   @media (min-width: @tablet-width) {
     order: 1;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     background-color: #ffffff;
-    padding-bottom: 58px;
+    padding-bottom: 37px;
   }
 
   @media (min-width: @desktop-width) {
@@ -56,17 +56,19 @@
   color: #283645;
   position: relative;
   display: block;
-  padding-left: 10px;
+  padding-left: 9px;
+  padding-bottom: 25px;
   margin-top: 22px;
 
   @media (min-width: @tablet-width) {
     margin-left: 31px;
     margin-top: 10px;
-    margin-bottom: 11px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 27px;
+    margin-left: 29px;
+    margin-bottom: 20px;
   }
 
   &:last-child {
@@ -90,9 +92,18 @@
     border: 2px solid #d22856;
   }
 
+  &:focus {
+    border: 2px solid #d22856;
+    border-radius: 1px;
+  }
+
   @media (min-width: @tablet-width) {
-    bottom: -6px;
+    bottom: 19px;
     left: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 19px;
   }
 }
 
